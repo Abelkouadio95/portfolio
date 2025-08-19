@@ -1,0 +1,141 @@
+import type { Skill } from "@/types/portfolio";
+
+export const profilData = "Motivé et passionné par la data science et l'IA, j'ai acquis une solide expérience en informatique et électronique au cours de mes stages. J'ai développé des compétences solides en analyse de données et en développement logiciel, que je souhaite mettre au service d'une entreprise ambitieuse. Mon parcours académique m'a permis de maîtriser les concepts fondamentaux de la science des données et je suis prêt à relever de nouveaux défis. Je suis rapidement opérationnel et je suis certain de pouvoir apporter une contribution significative à votre équipe et être à la hauteur de la confiance qui me sera accordé.";
+
+export const experienceData = [
+  {
+    title: "Stage Data Science/IA & Developpement Fullstack",
+    company: "ATLECS : ATLas Engineering & Consulting Society",
+    location: "Fez, MAROC",
+    period: "Février 2025 - Juillet 2025",
+    description: "Conception d’un système de collecte de données visant à optimiser le recrutement des ingénieurs et leur placement chez les clients.",
+    details : [
+      "Création d’un dashboard interactif pour la consultation de KPIs clés (nombre de consultants, nombre de candidats, CVs en attente, etc).",
+      "Intégration d’outils de vision par ordinateur (OCR) pour la reconnaissance optique de caractères sur les CV des consultants.",
+      "Entraînement d’un modèle de machine learning avec SpaCy NLP pour l’extraction intelligente d’informations.",
+      "Développement d’une interface de mise en correspondance entre les profils et les missions ( matching profil/mission )."
+    ],
+    technologies: ["Vision par ordinateur", "NLP", "Spring-boot", "Java", "Python", "Mysql"]
+  },
+  {
+    title: "Stage Data science IA",
+    company: "Mon Artisan",
+    location: "Abidjan, COTE D'IVOIRE",
+    period: "Juin 2024 - Juillet 2024",
+    description: "Développement d’un modèle prédictif basé sur des algorithmes de machine learning pour l’octroi de crédits à la clientèle.",
+    details : [
+      "Collecte, nettoyage, transformation et modélisation des données, suivis d’une analyse exploratoire (EDA).",
+      "Conception, entraînement et évaluation de modèles de machine learning (régression logistique, arbres de décision, KNN).",
+      "Développement et déploiement d’une application web dotée d’une interface utilisateur permettant la prédiction sur de nouvelles données."
+    ],
+    technologies: ["Python", "Machine learning", "FastAPI"]
+  },
+  {
+    title: "Freelance Developpemnt Web",
+    company: "SMSD : Societé Marocaine De Santé Digitale",
+    period: "Juin 2023",
+    location: "Rabat, MAROC",
+    description: "Développement d’un site web opérationnel pour  l'organisation SMSD, de la conception à la mise en production.",
+    details: [
+      "Participation à l’analyse des besoins fonctionnels et techniques de l’organisation.",
+      "Développement de l’architecture du site, des fonctionnalités clés, et intégration des interfaces utilisateur.",
+      "Coordination et gestion des tâches de l’équipe de développement (répartition du travail, suivi d’avancement, réunions de synchronisation).",
+      "Tests, débogage, et amélioration continue du site en fonction des retours utilisateurs"
+    ],
+    technologies: ["Python", "Django", "SQL",  "Agile"]
+  },
+  {
+    title: "Stage Developpeur Full  Stack",
+    company: "Ensam Rabat",
+    location: "Rabat, MAROC",
+    period: "Mai 2023 - Juillet 2023",
+    description: "Développement d’un système intelligent de gestion de serres hydroponiques",
+    details: [
+      "Conception d’une interface utilisateur interactive (dashboard) pour le suivi en temps réel des paramètres clés (température, humidité, pH, EC).",
+      "Résultats : Réduction de 30 % de la consommation d’eau par rapport à une gestion manuelle.  Amélioration de 25 % du rendement par m² grâce à l’optimisation des conditions de culture.Taux d’automatisation : plus de 80 % des actions courantes gérées sans intervention humaine."
+    ],
+    technologies: ["JavaScript", "Python", "FastAPI", "Jinja"]
+  },
+];
+
+export const skillsData: Skill[] = [
+  // Data & IA
+  { name: "Machine Learning", level: "expert", category: "data" },
+  { name: "Deep Learning", level: "intermédiaire", category: "data" },
+  { name: "Pandas", level: "expert", category: "data" },
+  { name: "Scikit-learn", level: "avancé", category: "data" },
+  { name: "TensorFlow", level: "intermédiaire", category: "data" },
+  { name: "PyTorch", level: "intermédiaire", category: "data" },
+  { name: "Matplotlib", level: "expert", category: "data" },
+
+  // Visualisation
+  { name: "Power BI", level: "expert", category: "ov" },
+  { name: "Excel", level: "avancé", category: "ov" },
+  { name: "Google sheet", level: "avancé", category: "ov" },
+  { name: "Tableau", level: "intermédiaire", category: "ov" },
+
+  // Langages
+  { name: "Python", level: "expert", category: "languages" },
+  { name: "JavaScript", level: "avancé", category: "languages" },
+  { name: "SQL", level: "avancé", category: "languages" },
+  { name: "R", level: "intermédiaire", category: "languages" },
+  { name: "DAX", level: "avancé", category: "languages" },
+  { name: "Java", level: "avancé", category: "languages" },
+  
+  // Frontend
+  { name: "React", level: "intermédiaire", category: "frontend" },
+  { name: "Next.js", level: "intermédiaire", category: "frontend" },
+  { name: "TypeScript", level: "intermédiaire", category: "frontend" },
+  { name: "Tailwind CSS", level: "expert", category: "frontend" },
+  { name: "Framer Motion", level: "avancé", category: "frontend" },
+  { name: "Bootstrap", level: "expert", category: "frontend" },
+  
+  // Backend
+  { name: "Node.js", level: "intermédiaire", category: "backend" },
+  { name: "Django", level: "avancé", category: "backend" },
+  { name: "FastAPI", level: "avancé", category: "backend" },
+  { name: "Spring-boot", level: "avancé", category: "backend" },
+
+  // Bases de données
+  { name: "MySQL", level: "expert", category: "db" },
+  { name: "MongoDB", level: "intermédiaire", category: "db" },
+  { name: "PostgreSql", level: "avancé", category: "db" },
+  { name: "H2 Database,", level: "avancé", category: "db" },
+
+  
+  // Outils
+  { name: "Git", level: "expert", category: "tools" },
+  { name: "Docker", level: "intermédiaire", category: "tools" },
+  { name: "AWS", level: "intermédiaire", category: "tools" },
+  
+];
+
+export const educationData = [
+  {
+    degree: "Ingénieur d'Etat en numérique spécialité data science et intelligence artificielle",
+    institution: " ENSAM : École Nationale Supérieure d'Arts et Métiers",
+    location: "Rabat, MAROC",
+    period: "2022 - 2025",
+    description: "Formation approfondie en informatique, axée sur la science des données et l'intelligence artificielle, couvrant l'analyse de données, le machine learning et les technologies innovantes pour résoudre des problématiques complexes",
+    mention: "Bien",
+    relevantCourses: ["Machine Learning", "Deep Learning", "Big Data", "Statistiques", "Algèbre linéaire", "Programmation", "Developpement Web"]
+  },
+  {
+    degree: "Classe Préparatoire Scientifique ( Mathématiques, Physiques)",
+    institution: "ESTEM : Ecole Supérieure en Ingénierie de L’Information, Télécommunication, Management & Genie Civil",
+    location: "Casablanca, MAROC",
+    period: "2020 - 2022",
+    description: "Classe préparatoire scientifique MP offrant une solide base en mathématiques, physique et probabilités, préparant efficacement aux études en informatique, science des données et intelligence artificielle.",
+    mention: "Bien",
+    relevantCourses: ["Probabilités", "Statistiques", "Optimisation", "Analyse numérique", "Informatique"]
+  },
+  {
+    degree: "Baccalauréat Scientifique",
+    institution: "Lycée scientifique Félix Houphouët Boigny",
+    location: "Yamoussoukro, COTE D'IVOIRE",
+    period: "2017 - 2020",
+    description: "Formation en mathématiques avec focus sur les applications pratiques et la modélisation, Baccalauréat scientifique fournissant une solide formation en sciences fondamentales et en mathématiques, développant rigueur, esprit analytique et capacités de raisonnement.",
+    mention: "Bien",
+    relevantCourses: ["Calcul différentiel", "Probabilités", "Statistiques", "Optimisation", "Analyse numérique"]
+  }
+]; 

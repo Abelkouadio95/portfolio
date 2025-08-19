@@ -1,8 +1,12 @@
-
+import Layout from "@/components/layout/layout";
+import ProjectsClient from "@/components/projects/ProjectsClient";
 
 export default function Projects() {
-
     return(
-        <p>ceci est la page de proejet</p>
+        <main>
+            <Layout>
+                <ProjectsClient />
+            </Layout>
+        </main>
     )
 }
