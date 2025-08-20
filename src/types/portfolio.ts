@@ -19,7 +19,7 @@ export interface Project {
   id: string;
   title: string;
   shortDescription: string;
-  longDescription: string;
+  longDescription: string[];
   imageSrc: string; // chemin depuis /public (ex: "/window.svg")
   tags?: string[];
   features?: string[];
