@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import AnimatedSection from "@/components/animatedSection";
-import CardContainer from "@/components/CardContainer";
+import AnimatedSection from "@/components/animation/animatedSection";
+import CardContainer from "@/components/layout/CardContainer";
 import ProjectCard from "@/components/projects/ProjectCard";
 import ProjectModal from "@/components/projects/ProjectModal";
 import { projects } from "@/data/projects";
@@ -39,6 +39,7 @@ export default function ProjectsClient() {
             <ProjectCard key={p.id} project={p} onVoirPlus={handleVoirPlus} />
           ))}
         </div>
+        <div className="mb-5"></div>
       </AnimatedSection>
 
       <ProjectModal project={selected} isOpen={open} onClose={handleClose} />

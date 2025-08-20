@@ -55,17 +55,22 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                 {project.title}
               </h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                {project.longDescription}
-              </p>
-
+                {project.longDescription.map((ld,i) => (
+                  <p key={i} className="text-gray-600 dark:text-gray-300 mb-2">
+                    {ld}
+                  </p>
+                ))
+                }
               {project.tags && (
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, i) => (
-                    <span key={i} className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-gray-200">
-                      {tag}
-                    </span>
-                  ))}
+                <div className="mt-5 mb-5">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Technologies et outils utilisés</h3>
+                  <div className="flex gap-2 mb-4">
+                    {project.tags.map((tag, i) => (
+                        <span key={i} className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-gray-200 border border-gray-400 ">
+                          {tag}
+                        </span>
+                    ))}
+                  </div>
                 </div>
               )}
 
@@ -79,6 +84,11 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                   </ul>
                 </div>
               )}
+              <div className="mt-7 mb-4 text-sm">
+                <p>Cliquez sur code source pour voir les fichiers reliés au projet.</p>
+                <p>Une fois sur github, consultez le fichier Readme.md pour davantages d'informations.</p>
+              </div>
+              
 
               <div className="flex flex-wrap gap-3 pt-2">
                 {project.demoUrl && (

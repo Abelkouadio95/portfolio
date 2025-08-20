@@ -26,7 +26,7 @@ export default function ProjectCard({ project, onVoirPlus }: ProjectCardProps) {
         />
         <div className="absolute inset-0 ring-1 ring-inset ring-gray-100/50 dark:ring-gray-700/50 rounded-xl pointer-events-none"></div>
       </div>
-      <div className="p-5">
+      <div className=" pt-0 p-5">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">
           {project.title}
         </h3>
@@ -35,7 +35,7 @@ export default function ProjectCard({ project, onVoirPlus }: ProjectCardProps) {
         </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tags?.slice(0, 4).map((tag, i) => (
-            <span key={i} className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-gray-200">
+            <span key={i} className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-gray-200 border border-gray-400">
               {tag}
             </span>
           ))}
