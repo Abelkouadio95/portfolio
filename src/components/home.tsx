@@ -21,7 +21,7 @@ export default function HomePage() {
           </div>
 
           <div className=" pt-3 w-1/2 flex flex-col items-center self-center">
-            <AnimatedText text="Là où les chiffres racontent des histoires, je crée le futur." className="!text-5xl !text-left">
+            <AnimatedText text="Là où les chiffres racontent Le passé, je crée le futur." className="!text-5xl !text-left">
             </AnimatedText>
             <AnimatedSection>
               <p className="my-4 text-base font-medium">Passionné par la donnée, j’allie l’analyse descriptive d’un Data Analyst et la puissance prédictive d’un Data Scientist. J’explore, nettoie et interprète les données pour en extraire des insights, puis je conçois des modèles de machine learning capables de transformer ces informations en solutions concrès</p>
