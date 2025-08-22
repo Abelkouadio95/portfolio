@@ -10,10 +10,11 @@ export const experienceData = [
     period: "Février 2025 - Juillet 2025",
     description: "Conception d’un système de collecte de données visant à optimiser le recrutement des ingénieurs et leur placement chez les clients.",
     details : [
-      "Création d’un dashboard interactif pour la consultation de KPIs clés (nombre de consultants, nombre de candidats, CVs en attente, etc).",
-      "Intégration d’outils de vision par ordinateur (OCR) pour la reconnaissance optique de caractères sur les CV des consultants.",
-      "Entraînement d’un modèle de machine learning avec SpaCy NLP pour l’extraction intelligente d’informations.",
-      "Développement d’une interface de mise en correspondance entre les profils et les missions ( matching profil/mission )."
+      "Développement d’un dashboard interactif permettant aux équipes RH de suivre en temps réel des KPIs clés (consultants en mission, CVs en attente…), améliorant la prise de décision.",
+      "Intégration d’un module OCR pour extraire automatiquement les informations des CVs, diminuant la saisie manuelle et les erreurs associées.",
+      "Conception et entraînement d’un modèle NLP (SpaCy) pour l’extraction intelligente de données (nom, compétences, expériences…), facilitant la présélection des candidats.",
+      "Développement d’une interface de mise en correspondance entre les profils et les missions ( matching profil/mission ).",
+      "Contribution à l’architecture Full Stack (Spring Boot, MySQL), garantissant la scalabilité et l’intégration fluide avec les outils internes."
     ],
     technologies: ["Vision par ordinateur", "NLP", "Spring-boot", "Java", "Python", "Mysql"]
   },
@@ -24,9 +25,10 @@ export const experienceData = [
     period: "Juin 2024 - Juillet 2024",
     description: "Développement d’un modèle prédictif basé sur des algorithmes de machine learning pour l’octroi de crédits à la clientèle.",
     details : [
-      "Collecte, nettoyage, transformation et modélisation des données, suivis d’une analyse exploratoire (EDA).",
-      "Conception, entraînement et évaluation de modèles de machine learning (régression logistique, arbres de décision, KNN).",
-      "Développement et déploiement d’une application web dotée d’une interface utilisateur permettant la prédiction sur de nouvelles données."
+      "Collecte, nettoyage, transformation et modélisation des données",
+      "Réalisation d’analyses exploratoires (EDA) permettant d’identifier les variables les plus discriminantes dans la prédiction du risque client.",
+      "Conception, entraînement et évaluation de plusieurs modèles (régression logistique, arbres de décision, KNN), avec comparaison des performances pour sélectionner le plus pertinent.",
+      "Développement d’une application web avec interface utilisateur, facilitant l’accès aux prédictions pour les équipes non techniques."
     ],
     technologies: ["Python", "Machine learning", "FastAPI"]
   },
@@ -66,13 +68,16 @@ export const skillsData: Skill[] = [
   { name: "Scikit-learn", level: "avancé", category: "data" },
   { name: "TensorFlow", level: "intermédiaire", category: "data" },
   { name: "PyTorch", level: "intermédiaire", category: "data" },
-  { name: "Matplotlib", level: "expert", category: "data" },
+  { name: "Vision par ordinateur", level: "avancé", category: "data" },
+  { name: "NLP", level: "avancé", category: "data" },
 
   // Visualisation
   { name: "Power BI", level: "expert", category: "ov" },
   { name: "Excel", level: "avancé", category: "ov" },
   { name: "Google sheet", level: "avancé", category: "ov" },
   { name: "Tableau", level: "intermédiaire", category: "ov" },
+  { name: "Matplotlib", level: "expert", category: "ov" },
+  { name: "Seaborn", level: "expert", category: "ov" },
 
   // Langages
   { name: "Python", level: "expert", category: "languages" },
@@ -81,6 +86,8 @@ export const skillsData: Skill[] = [
   { name: "R", level: "intermédiaire", category: "languages" },
   { name: "DAX", level: "avancé", category: "languages" },
   { name: "Java", level: "avancé", category: "languages" },
+  { name: "C", level: "avancé", category: "languages" },
+  { name: "C++", level: "avancé", category: "languages" },
   
   // Frontend
   { name: "React", level: "intermédiaire", category: "frontend" },
@@ -100,7 +107,7 @@ export const skillsData: Skill[] = [
   { name: "MySQL", level: "expert", category: "db" },
   { name: "MongoDB", level: "intermédiaire", category: "db" },
   { name: "PostgreSql", level: "avancé", category: "db" },
-  { name: "H2 Database,", level: "avancé", category: "db" },
+  { name: "H2 Database", level: "avancé", category: "db" },
 
   
   // Outils
@@ -127,7 +134,7 @@ export const educationData = [
     period: "2020 - 2022",
     description: "Classe préparatoire scientifique MP offrant une solide base en mathématiques, physique et probabilités, préparant efficacement aux études en informatique, science des données et intelligence artificielle.",
     mention: "Bien",
-    relevantCourses: ["Probabilités", "Statistiques", "Optimisation", "Analyse numérique", "Informatique"]
+    relevantCourses: ["Probabilités", "Statistiques", "Algèbre linéaire", "Optimisation", "Analyse numérique", "Informatique"]
   },
   {
     degree: "Baccalauréat Scientifique",
