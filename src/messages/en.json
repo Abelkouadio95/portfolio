@@ -1,0 +1,313 @@
+{
+    "home":{
+        "title": "Where numbers tell the past, I create the future.",
+        "subtitle": "Hello, I'm Abel Kouadio, Data Scientist & Full Stack Developer",
+        "description": "Passionate about data, I combine the descriptive analysis of a Data Analyst with the predictive power of a Data Scientist. I explore, clean, and interpret data to extract insights, then design machine learning models capable of transforming this information into concrete solutions.",
+        "goal": "My goal: helping companies understand their present and anticipate their future."
+    },
+    "nav":{
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "articles": "Articles"
+    },
+    "about":{
+        "exprof": "Professional Experience",
+        "profilname": "Profile",
+        "competence": "Technical Skills",
+        "edu": "Education",
+        "profil": "Motivated and passionate about data science and AI, I have acquired solid experience in computer science and electronics during my internships. I have developed strong skills in data analysis and software development, which I want to put at the service of an ambitious company. My academic background has allowed me to master the fundamental concepts of data science and I am ready to take on new challenges. I am quickly operational and I am certain that I can make a significant contribution to your team and live up to the trust that will be placed in me.",
+        "experienceData": [
+            {
+                "title": "Data Science/AI & Full Stack Development Internship",
+                "company": "ATLECS : ATLas Engineering & Consulting Society",
+                "location": "Fez, MOROCCO",
+                "period": "February 2025 - July 2025",
+                "description": "Design of a data collection system aimed at optimizing the recruitment of engineers and their placement with clients.",
+                "details" : [
+                    "Development of an interactive dashboard allowing HR teams to monitor key KPIs in real-time (consultants on mission, pending CVs...), improving decision-making.",
+                    "Integration of an OCR module to automatically extract information from CVs, reducing manual entry and associated errors.",
+                    "Design and training of an NLP model (SpaCy) for intelligent data extraction (name, skills, experiences...), facilitating candidate pre-selection.",
+                    "Development of an interface for matching profiles and missions (profile/mission matching).",
+                    "Contribution to Full Stack architecture (Spring Boot, MySQL), ensuring scalability and smooth integration with internal tools."
+                ],
+                "technologies": ["Computer Vision", "NLP", "Spring-boot", "Java", "Python", "Mysql"]
+            },
+            {
+                "title": "Data Science AI Internship",
+                "company": "Mon Artisan",
+                "location": "Abidjan, IVORY COAST",
+                "period": "June 2024 - July 2024",
+                "description": "Development of a predictive model based on machine learning algorithms for customer credit granting.",
+                "details" : [
+                    "Data collection, cleaning, transformation and modeling",
+                    "Exploratory data analysis (EDA) to identify the most discriminating variables in customer risk prediction.",
+                    "Design, training and evaluation of several models (logistic regression, decision trees, KNN), with performance comparison to select the most relevant one.",
+                    "Development of a web application with user interface, facilitating access to predictions for non-technical teams."
+                ],
+                "technologies": ["Python", "Machine learning", "FastAPI"]
+            },
+            {
+                "title": "Web Development Freelance",
+                "company": "SMSD : Moroccan Digital Health Society",
+                "period": "June 2023",
+                "location": "Rabat, MOROCCO",
+                "description": "Development of an operational website for the SMSD organization, from design to production.",
+                "details": [
+                    "Participation in the analysis of functional and technical needs of the organization.",
+                    "Development of the site architecture, key features, and user interface integration.",
+                    "Coordination and management of development team tasks (work distribution, progress monitoring, synchronization meetings).",
+                    "Testing, debugging, and continuous improvement of the site based on user feedback"
+                ],
+                "technologies": ["Python", "Django", "SQL",  "Agile"]
+            },
+            {
+                "title": "Full Stack Developer Internship",
+                "company": "Ensam Rabat",
+                "location": "Rabat, MOROCCO",
+                "period": "May 2023 - July 2023",
+                "description": "Development of an intelligent hydroponic greenhouse management system",
+                "details": [
+                    "Design of an interactive user interface (dashboard) for real-time monitoring of key parameters (temperature, humidity, pH, EC).",
+                    "Results: 30% reduction in water consumption compared to manual management. 25% improvement in yield per m² thanks to optimization of growing conditions. Automation rate: more than 80% of routine actions managed without human intervention."
+                ],
+                "technologies": ["JavaScript", "Python", "FastAPI", "Jinja"]
+            }
+        ],
+        
+        "data": "Data & AI",
+        "languages": "Languages",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tools": "Tools",
+        "Db": "Databases",
+        "Viz": "Visualization Tools",
+
+        "skillsData": [
+            {
+                "name": "Machine Learning",
+                "level": "expert",
+                "category": "data"
+            },
+            {
+                "name": "Deep Learning",
+                "level": "intermédiaire",
+                "category": "data"
+            },
+            {
+                "name": "Pandas",
+                "level": "expert",
+                "category": "data"
+            },
+            {
+                "name": "Scikit-learn",
+                "level": "avancé",
+                "category": "data"
+            },
+            {
+                "name": "TensorFlow",
+                "level": "intermédiaire",
+                "category": "data"
+            },
+            {
+                "name": "PyTorch",
+                "level": "intermédiaire",
+                "category": "data"
+            },
+            {
+                "name": "Vision par ordinateur",
+                "level": "avancé",
+                "category": "data"
+            },
+            {
+                "name": "NLP",
+                "level": "avancé",
+                "category": "data"
+            },
+            {
+                "name": "Power BI",
+                "level": "expert",
+                "category": "ov"
+            },
+            {
+                "name": "Excel",
+                "level": "avancé",
+                "category": "ov"
+            },
+            {
+                "name": "Google sheet",
+                "level": "avancé",
+                "category": "ov"
+            },
+            {
+                "name": "Tableau",
+                "level": "intermédiaire",
+                "category": "ov"
+            },
+            {
+                "name": "Matplotlib",
+                "level": "expert",
+                "category": "ov"
+            },
+            {
+                "name": "Seaborn",
+                "level": "expert",
+                "category": "ov"
+            },
+            {
+                "name": "Python",
+                "level": "expert",
+                "category": "languages"
+            },
+            {
+                "name": "JavaScript",
+                "level": "avancé",
+                "category": "languages"
+            },
+            {
+                "name": "SQL",
+                "level": "avancé",
+                "category": "languages"
+            },
+            {
+                "name": "R",
+                "level": "intermédiaire",
+                "category": "languages"
+            },
+            {
+                "name": "DAX",
+                "level": "avancé",
+                "category": "languages"
+            },
+            {
+                "name": "Java",
+                "level": "avancé",
+                "category": "languages"
+            },
+            {
+                "name": "C",
+                "level": "avancé",
+                "category": "languages"
+            },
+            {
+                "name": "C++",
+                "level": "avancé",
+                "category": "languages"
+            },
+            {
+                "name": "React",
+                "level": "intermédiaire",
+                "category": "frontend"
+            },
+            {
+                "name": "Next.js",
+                "level": "intermédiaire",
+                "category": "frontend"
+            },
+            {
+                "name": "TypeScript",
+                "level": "intermédiaire",
+                "category": "frontend"
+            },
+            {
+                "name": "Tailwind CSS",
+                "level": "expert",
+                "category": "frontend"
+            },
+            {
+                "name": "Framer Motion",
+                "level": "avancé",
+                "category": "frontend"
+            },
+            {
+                "name": "Bootstrap",
+                "level": "expert",
+                "category": "frontend"
+            },
+            {
+                "name": "Node.js",
+                "level": "intermédiaire",
+                "category": "backend"
+            },
+            {
+                "name": "Django",
+                "level": "avancé",
+                "category": "backend"
+            },
+            {
+                "name": "FastAPI",
+                "level": "avancé",
+                "category": "backend"
+            },
+            {
+                "name": "Spring-boot",
+                "level": "avancé",
+                "category": "backend"
+            },
+            {
+                "name": "MySQL",
+                "level": "expert",
+                "category": "db"
+            },
+            {
+                "name": "MongoDB",
+                "level": "intermédiaire",
+                "category": "db"
+            },
+            {
+                "name": "PostgreSql",
+                "level": "avancé",
+                "category": "db"
+            },
+            {
+                "name": "H2 Database",
+                "level": "avancé",
+                "category": "db"
+            },
+            {
+                "name": "Git",
+                "level": "expert",
+                "category": "tools"
+            },
+            {
+                "name": "Docker",
+                "level": "intermédiaire",
+                "category": "tools"
+            },
+            {
+                "name": "AWS",
+                "level": "intermédiaire",
+                "category": "tools"
+            }
+        ],
+        "educationData": [
+            {
+                "degree": "State Engineer in Digital with specialization in Data Science and Artificial Intelligence",
+                "institution": "ENSAM : National School of Arts and Crafts",
+                "location": "Rabat, MOROCCO",
+                "period": "2022 - 2025",
+                "description": "In-depth training in computer science, focused on data science and artificial intelligence, covering data analysis, machine learning and innovative technologies to solve complex problems",
+                "mention": "Good",
+                "relevantCourses": ["Machine Learning", "Deep Learning", "Big Data", "Statistics", "Linear Algebra", "Programming", "Web Development"]
+            },
+            {
+                "degree": "Scientific Preparatory Class (Mathematics, Physics)",
+                "institution": "ESTEM : Higher School of Information Engineering, Telecommunications, Management & Civil Engineering",
+                "location": "Casablanca, MOROCCO",
+                "period": "2020 - 2022",
+                "description": "MP scientific preparatory class offering a solid foundation in mathematics, physics and probabilities, effectively preparing for studies in computer science, data science and artificial intelligence.",
+                "mention": "Good",
+                "relevantCourses": ["Probability", "Statistics", "Linear Algebra", "Optimization", "Numerical Analysis", "Computer Science"]
+            },
+            {
+                "degree": "Scientific Baccalaureate",
+                "institution": "Félix Houphouët Boigny Scientific High School",
+                "location": "Yamoussoukro, IVORY COAST",
+                "period": "2017 - 2020",
+                "description": "Mathematics training with focus on practical applications and modeling, Scientific Baccalaureate providing solid training in fundamental sciences and mathematics, developing rigor, analytical thinking and reasoning abilities.",
+                "mention": "Good",
+                "relevantCourses": ["Differential Calculus", "Probability", "Statistics", "Optimization", "Numerical Analysis"]
+            }
+        ]
+    }
+}
