@@ -1,8 +1,5 @@
-import HomePage from "@/components/home";
+import { redirect } from 'next/navigation';
 
-
-export default function Home() {
-  return (
-    <HomePage/>
-  )
+export default function RootPage() {
+  redirect('/fr');
 }
