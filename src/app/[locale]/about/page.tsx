@@ -40,7 +40,7 @@ export default function About() {
                             <div className="text-center md:text-left">
                                 <h1 className="text-4xl font-bold bg-gradient-to-r from-gray-900 via-purple-700 to-blue-600 dark:from-white dark:via-purple-200 dark:to-blue-200 bg-clip-text text-transparent">KOUADIO ABEL BEKANTIE</h1>
                                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-                                    Ingénieur Numérique spécialité Data Science et Intelligence Artificielle
+                                    {t('status')}
                                 </p>
                                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                                     <span className="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm font-medium">
@@ -61,7 +61,7 @@ export default function About() {
                     {/* Section Profil */}
                     <AnimatedSection>
                         <CardContainer 
-                            title="Profil" 
+                            title={t('profilname')}
                             className="mb-8"
                             delay={0.2}
                             icon = {<FaUser size={28} className="text-gray-700 " />}
