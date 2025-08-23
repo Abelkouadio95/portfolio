@@ -20,7 +20,7 @@ export interface Project {
   title: string;
   shortDescription: string;
   longDescription: string[];
-  imageSrc: string; // chemin depuis /public (ex: "/window.svg")
+  imageSrc: string;
   tags?: string[];
   features?: string[];
   demoUrl?: string;
