@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 interface Education {
@@ -17,6 +18,7 @@ interface EducationSectionProps {
 }
 
 export default function EducationSection({ education }: EducationSectionProps) {
+  const t = useTranslations('about');
   return (
     <div className="space-y-6">
       {education.map((edu, index) => (
@@ -48,14 +50,14 @@ export default function EducationSection({ education }: EducationSectionProps) {
           {edu.mention && (
             <div className="mb-3">
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                Mention: <span className="text-green-600 dark:text-green-400">{edu.mention}</span>
+                {t('mention')}: <span className="text-green-600 dark:text-green-400">{edu.mention}</span>
               </span>
             </div>
           )}
           {edu.relevantCourses && (
             <div>
               <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Cours pertinents:
+                {t('courses')}:
               </p>
               <div className="flex flex-wrap gap-2">
                 {edu.relevantCourses.map((course, courseIndex) => (
