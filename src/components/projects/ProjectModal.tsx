@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { FaTimes, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import type { Project } from "@/types/portfolio";
+import { useTranslations } from "next-intl";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -11,6 +12,7 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
+  const t = useTranslations('projects');
   return (
     <AnimatePresence>
       {isOpen && project && (
@@ -63,7 +65,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                 }
               {project.tags && (
                 <div className="mt-5 mb-5">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Technologies et outils utilisés</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('tech')} </h3>
                   <div className="flex gap-2 mb-4">
                     {project.tags.map((tag, i) => (
                         <span key={i} className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-gray-200 border border-gray-400 ">
@@ -76,7 +78,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
 
               {project.features && project.features.length > 0 && (
                 <div className="mb-4">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Fonctionnalités</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('features')} </h3>
                   <ul className="list-disc pl-6 space-y-1 text-gray-700 dark:text-gray-300">
                     {project.features.map((f, idx) => (
                       <li key={idx}>{f}</li>
@@ -85,8 +87,8 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                 </div>
               )}
               <div className="mt-7 mb-4 text-sm">
-                <p>Cliquez sur code source pour voir les fichiers reliés au projet.</p>
-                <p>Une fois sur github, consultez le fichier Readme.md pour davantages d'informations.</p>
+                <p>{t('p1')} </p>
+                <p>{t('p2')} </p>
               </div>
               
 
