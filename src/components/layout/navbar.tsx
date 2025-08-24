@@ -42,19 +42,20 @@ export function Navbar() {
         <CustomLink href="/" title={t('home')} />
         <CustomLink href="/about" title={t('about')} />
         <CustomLink href="/projects" title={t('projects')} />
-        <CustomLink href="/articles" title={t('articles')} />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
-        <motion.a href="/"
+        <motion.a href="https://www.linkedin.com/in/abel-kouadio-50333527b/" 
+        target={"_blank"}
         className="w-5 mr-3"
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}> <LinkedInIcon/></motion.a>
-        <motion.a href="/"
+        <motion.a href="https://github.com/Abelkouadio95"
+        target="_blank"
         className="w-6 ml-3"
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}><GithubIcon/></motion.a>
-        <div className="ml-6">
+        <div className="ml-3">
           <LanguageSwitcher />
         </div>
       </nav>
