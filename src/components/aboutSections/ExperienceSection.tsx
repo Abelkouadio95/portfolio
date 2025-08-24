@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-interface Experience {
+export interface Experience {
   title: string;
   company: string;
   location?: string;
