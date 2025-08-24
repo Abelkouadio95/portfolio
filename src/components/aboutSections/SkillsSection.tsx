@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import type { Skill } from "@/types/portfolio";
+import { useTranslations } from "next-intl";
 
 interface SkillsSectionProps {
   skills: Skill[];
@@ -41,6 +42,7 @@ const getCategoryColor = (category: Skill["category"]) => {
 };
 
 export default function SkillsSection({ skills }: SkillsSectionProps) {
+  const t = useTranslations('about');
   const groupedSkills = skills.reduce((acc, skill) => {
     if (!acc[skill.category]) {
       acc[skill.category] = [];
@@ -50,13 +52,13 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
   }, {} as Record<string, Skill[]>);
 
   const categoryLabels = {
-    data: "Data & IA",
-    languages: "Langages",
-    frontend: "Frontend",
-    backend: "Backend",
-    tools: "Outils",
-    db: "Bases de données",
-    ov : "Outils de Visualisation"
+    data: t('data'),
+    languages: t('languages'),
+    frontend: t('frontend'),
+    backend: t('backend'),
+    tools: t('tools'),
+    db: t('Db'),
+    ov : t('Viz')
   };
 
   return (
