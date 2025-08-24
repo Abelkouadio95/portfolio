@@ -1,3 +1,9 @@
 const config = {
   plugins: ["@tailwindcss/postcss"],
 };
+
+Là où les chiffres racontent Le passé, je crée le futur.
+
+
+</p>
+              <p className="font-semibold text-red-500 mb-4">
