@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub, FaInfoCircle } from "react-icons/fa";
 import type { Project } from "@/types/portfolioTypes";
+import { useTranslations } from "next-intl";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, onVoirPlus }: ProjectCardProps) {
+  const t = useTranslations('projects');
   return (
     <motion.div
       whileHover={{ scale: 1.1, boxShadow: "0px 8px 20px rgba(0,0,0,0.4)" }}
@@ -45,7 +47,7 @@ export default function ProjectCard({ project, onVoirPlus }: ProjectCardProps) {
             onClick={() => onVoirPlus(project)}
             className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-purple-600 text-white hover:bg-purple-700 transition"
           >
-            <FaInfoCircle /> Voir plus
+            <FaInfoCircle /> {t('seeMore')}
           </button>
           {project.demoUrl && (
             <a
