@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import type { Skill } from "@/types/portfolio";
+import type { Skill } from "@/types/portfolioTypes";
 import { useTranslations } from "next-intl";
 
 interface SkillsSectionProps {
