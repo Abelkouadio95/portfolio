@@ -41,6 +41,7 @@ export function Navbar() {
       <nav className="flex gap-10">
         <CustomLink href="/" title={t('home')} />
         <CustomLink href="/about" title={t('about')} />
+        <CustomLink href="/certifications" title="Certifications" />
         <CustomLink href="/projects" title={t('projects')} />
       </nav>
 
