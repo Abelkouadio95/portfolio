@@ -20,20 +20,21 @@ export const Footer: FC = ()=> {
                 <div className="py-7 flex items-center justify-between">
                     <div>
                         <p className="font-bold">KOUADIO ABEL BEKANTIE</p>
-                        <span className="text-base">{new Date().getFullYear()} &copy; All Rights Reserved.</span>
+                        <span className="text-sm">{new Date().getFullYear()} &copy; All Rights Reserved.</span>
                     </div>
                     <div className="">
                         <p className="font-bold text-lg">{t('quickLinks')} </p>
-                        <div className="space-x-3 text-base underline underline-offset-3">
-                            <Link href={`/${locale}${'/'}`}>{tr('home')} </Link>
-                            <Link href={`/${locale}${'/about'}`} > {tr('about')} </Link>
-                            <Link href={`/${locale}${'/projects'}`}>{tr('projects')} </Link>
+                        <div className="space-x-3 text-sm underline underline-offset-3 ">
+                            <Link href={`/${locale}${'/'}`} className="hover:text-blue-500" >{tr('home')} </Link>
+                            <Link href={`/${locale}${'/about'}`} className="hover:text-blue-500"> {tr('about')} </Link>
+                            <Link href={`/${locale}${'/projects'}`} className="hover:text-blue-500">{tr('projects')} </Link>
+                            <Link href={`/${locale}${'/certifications'}`} className="hover:text-blue-500"> Certifications</Link>
                         </div>
                     </div>
                     
                     <div>
                         <p className="font-bold text-lg">Contacts</p>
-                        <a href="mailto:abelkouadio195@gmail.com" target={"_blank"} className="flex items-center hover:text-blue-500 gap-3 text-base"><MdEmail size={20} color="#1f2937" /> abelkouadio195@gmail.com</a>
+                        <a href="mailto:abelkouadio195@gmail.com" target={"_blank"} className="flex items-center hover:text-blue-500 gap-3 text-sm"><MdEmail size={20} color="#1f2937" /> abelkouadio195@gmail.com</a>
                         <a href="https://wa.me/212694996559" target={"_blank"} className="text-base flex items-center gap-3 hover:text-green-500">
                             <FaWhatsapp size={20} color="#25d366" /> +212 6 94 99 65 59
                         </a>
