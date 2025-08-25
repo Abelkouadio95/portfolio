@@ -1,16 +1,8 @@
 "use client";
+import { Experience } from "@/types/portfolioTypes";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-export interface Experience {
-  title: string;
-  company: string;
-  location?: string;
-  period: string;
-  description: string;
-  details?: string[];
-  technologies?: string[];
-}
 
 interface ExperienceSectionProps {
   experiences: Experience[];
