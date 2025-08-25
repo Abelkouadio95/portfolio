@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { FaTimes, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import type { Project } from "@/types/portfolio";
+import type { Project } from "@/types/portfolioTypes";
 import { useTranslations } from "next-intl";
 
 interface ProjectModalProps {
@@ -87,8 +87,8 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                 </div>
               )}
               <div className="mt-7 mb-4 text-sm">
-                <p>{t('p1')} </p>
-                <p>{t('p2')} </p>
+                <p>{t('pOne')} </p>
+                <p>{t('pTwo')} </p>
               </div>
               
 

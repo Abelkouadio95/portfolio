@@ -4,7 +4,7 @@ import AnimatedSection from "@/components/animation/animatedSection";
 import CardContainer from "@/components/layout/CardContainer";
 import ProjectCard from "@/components/projects/ProjectCard";
 import ProjectModal from "@/components/projects/ProjectModal";
-import type { Project } from "@/types/portfolio";
+import type { Project } from "@/types/portfolioTypes";
 import { FaFolderOpen } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
