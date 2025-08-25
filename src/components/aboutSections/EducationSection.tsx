@@ -1,17 +1,8 @@
 "use client";
+import { Education } from "@/types/portfolioTypes";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
-interface Education {
-  degree: string;
-  institution: string;
-  location: string;
-  period: string;
-  description: string;
-  mention?: string;
-  relevantCourses?: string[];
-}
 
 interface EducationSectionProps {
   education: Education[];
