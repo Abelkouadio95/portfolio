@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub, FaInfoCircle } from "react-icons/fa";
-import type { Project } from "@/types/portfolio";
+import type { Project } from "@/types/portfolioTypes";
 
 interface ProjectCardProps {
   project: Project;
