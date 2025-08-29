@@ -1,4 +1,4 @@
-import type { Skill } from "@/types/portfolio";
+import type { Skill } from "@/types/portfolioTypes";
 
 export const profilData = "Motivé et passionné par la data science et l'IA, j'ai acquis une solide expérience en informatique et électronique au cours de mes stages. J'ai développé des compétences solides en analyse de données et en développement logiciel, que je souhaite mettre au service d'une entreprise ambitieuse. Mon parcours académique m'a permis de maîtriser les concepts fondamentaux de la science des données et je suis prêt à relever de nouveaux défis. Je suis rapidement opérationnel et je suis certain de pouvoir apporter une contribution significative à votre équipe et être à la hauteur de la confiance qui me sera accordé.";
 
