@@ -20,11 +20,11 @@ const CustomLink: React.FC<CustomLinkProps> = ({ href, title, className = "", on
   const locale = pathname.split('/')[1] || 'fr';
 
   return (
-    <Link href={`/${locale}${href}`} className={`${className} relative group`} onClick={onClick}>
+    <Link href={`/${locale}${href}`} className={`${className} relative group text-black dark:text-white`} onClick={onClick}>
       {title}
       <span
         className={`
-          absolute left-0 -bottom-0.5 h-[2px] bg-black
+          absolute left-0 -bottom-0.5 h-[2px] bg-black dark:bg-white
           transition-all duration-300 ease-out
           ${pathname === `/${locale}${href}` ? "w-full" : "w-0"}
           group-hover:w-full
@@ -41,7 +41,7 @@ export function Navbar() {
   return (
     <header className="fixed bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-full px-4 md:px-32 py-4 md:py-8 pb-2 font-medium flex items-center justify-between z-50">
       <div className="text-lg font-bold">
-        <Link href="/">ABEL KOUADIO</Link>
+        <Link href="/" className="text-black dark:text-white">ABEL KOUADIO</Link>
       </div>
 
       {/* Desktop Navigation */}
@@ -75,9 +75,9 @@ export function Navbar() {
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
-        <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-        <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-        <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+        <span className={`w-6 h-0.5 bg-black dark:bg-white transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+        <span className={`w-6 h-0.5 bg-black dark:bg-white transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+        <span className={`w-6 h-0.5 bg-black dark:bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
       </button>
 
       {/* Mobile Menu Overlay */}
@@ -86,7 +86,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="fixed top-16 left-0 right-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t border-gray-200 md:hidden"
+          className="fixed top-16 left-0 right-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t border-gray-200 dark:border-gray-700 md:hidden"
         >
           <nav className="flex flex-col p-4 space-y-4">
             <CustomLink href="/" title={t('home')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
@@ -95,7 +95,7 @@ export function Navbar() {
             <CustomLink href="/projects" title={t('projects')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
             
             {/* Mobile Social Links */}
-            <div className="flex items-center justify-center space-x-6 pt-4 border-t border-gray-200">
+            <div className="flex items-center justify-center space-x-6 pt-4 border-t border-gray-200 dark:border-gray-700">
               <motion.a href="https://www.linkedin.com/in/abel-kouadio-50333527b/" 
               target={"_blank"}
               className="w-6"
