@@ -45,7 +45,7 @@ export default function CertificationsClient() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-4 md:py-8">
         {/* Filtres et en-tête */}
         <CertificationsFilter
           categories={categories}
@@ -55,14 +55,14 @@ export default function CertificationsClient() {
         />
 
         {/* Statistiques rapides */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
           {categories.slice(1).map((category) => (
             <div
               key={category}
-              className="bg-white dark:bg-gray-800 rounded-lg p-4 text-center border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+              className="bg-white dark:bg-gray-800 rounded-lg p-3 md:p-4 text-center border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
               onClick={() => handleCategoryChange(category)}
             >
-              <div className="text-2xl mb-2">
+              <div className="text-xl md:text-2xl mb-1 md:mb-2">
                 {category === 'data-science' && '📊'}
                 {category === 'python' && '🐍'}
                 {category === 'machine-learning' && '🤖'}
@@ -70,10 +70,10 @@ export default function CertificationsClient() {
                 {category === 'language' && '🌍'}
                 {category === 'other' && '📜'}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+              <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mb-1">
                 {category.replace('-', ' ').toUpperCase()}
               </div>
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+              <div className="text-lg md:text-2xl font-bold text-blue-600 dark:text-blue-400">
                 {categoryStats[category]}
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function CertificationsClient() {
         </div>
 
         {/* Grille des certifications */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {filteredCertifications.map((certification) => (
             <CertificationCard
               key={certification.id}
@@ -91,12 +91,12 @@ export default function CertificationsClient() {
         </div>
 
         {/* Section de motivation */}
-        <div className="mt-16 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 text-center border border-blue-200 dark:border-blue-800">
-          <div className="text-4xl mb-4">🚀</div>
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+        <div className="mt-8 md:mt-16 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-4 md:p-8 text-center border border-blue-200 dark:border-blue-800">
+          <div className="text-3xl md:text-4xl mb-3 md:mb-4">🚀</div>
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3 md:mb-4">
             {t('adviceTitle')}
           </h3>
-          <p className="text-gray-700 dark:text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-700 dark:text-gray-300 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">
             {t('adviceContent')}
           </p>
         </div>

@@ -22,21 +22,21 @@ export default function ProjectsClient() {
   const projectsData= t.raw('projectsData') as Project[];
 
   return (
-    <div className="pt-24 md:pt-28">
+    <div className="pt-16 md:pt-24 lg:pt-28">
       <AnimatedSection>
         <CardContainer
           title={t('projectsTitle')}
-          icon={<FaFolderOpen size={28} className="text-gray-700" />}
+          icon={<FaFolderOpen size={24} className="text-gray-700 md:w-7 md:h-7" />}
           className="mb-8"
         >
-          <p className="text-gray-700 dark:text-gray-300">
+          <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
             {t('projectsContent')}
           </p>
         </CardContainer>
       </AnimatedSection>
 
       <AnimatedSection>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-gray-100 rounded-xl p-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {projectsData.map((p) => (
             <ProjectCard key={p.id} project={p} onVoirPlus={handleVoirPlus} />
           ))}

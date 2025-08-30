@@ -17,14 +17,17 @@ export const Footer: FC = ()=> {
     return(
         <footer className="w-full border-t-1 border-solid border-black font-medium text-lg">
             <Layout>
-                <div className="py-7 flex items-center justify-between">
-                    <div>
-                        <p className="font-bold">KOUADIO ABEL BEKANTIE</p>
+                <div className="py-7 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0">
+                    {/* Brand Section */}
+                    <div className="text-center lg:text-left">
+                        <p className="font-bold text-lg">KOUADIO ABEL BEKANTIE</p>
                         <span className="text-sm">{new Date().getFullYear()} &copy; All Rights Reserved.</span>
                     </div>
-                    <div className="">
-                        <p className="font-bold text-lg">{t('quickLinks')} </p>
-                        <div className="space-x-3 text-sm underline underline-offset-3 ">
+                    
+                    {/* Quick Links Section */}
+                    <div className="text-center lg:text-left">
+                        <p className="font-bold text-lg mb-2">{t('quickLinks')} </p>
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-2 lg:space-x-3 text-sm underline underline-offset-3">
                             <Link href={`/${locale}${'/'}`} className="hover:text-blue-500" >{tr('home')} </Link>
                             <Link href={`/${locale}${'/about'}`} className="hover:text-blue-500"> {tr('about')} </Link>
                             <Link href={`/${locale}${'/projects'}`} className="hover:text-blue-500">{tr('projects')} </Link>
@@ -32,12 +35,21 @@ export const Footer: FC = ()=> {
                         </div>
                     </div>
                     
-                    <div>
-                        <p className="font-bold text-lg">Contacts</p>
-                        <a href="mailto:abelkouadio195@gmail.com" target={"_blank"} className="flex items-center hover:text-blue-500 gap-3 text-sm"><MdEmail size={20} color="#1f2937" /> abelkouadio195@gmail.com</a>
-                        <a href="https://wa.me/212694996559" target={"_blank"} className="text-base flex items-center gap-3 hover:text-green-500">
-                            <FaWhatsapp size={20} color="#25d366" /> +212 6 94 99 65 59
-                        </a>
+                    {/* Contact Section */}
+                    <div className="text-center lg:text-left">
+                        <p className="font-bold text-lg mb-2">Contacts</p>
+                        <div className="space-y-2">
+                            <a href="mailto:abelkouadio195@gmail.com" target={"_blank"} className="flex items-center justify-center lg:justify-start hover:text-blue-500 gap-3 text-sm">
+                                <MdEmail size={20} color="#1f2937" /> 
+                                <span className="hidden sm:inline">abelkouadio195@gmail.com</span>
+                                <span className="sm:hidden">Email</span>
+                            </a>
+                            <a href="https://wa.me/212694996559" target={"_blank"} className="text-base flex items-center justify-center lg:justify-start gap-3 hover:text-green-500">
+                                <FaWhatsapp size={20} color="#25d366" /> 
+                                <span className="hidden sm:inline">+212 6 94 99 65 59</span>
+                                <span className="sm:hidden">WhatsApp</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </Layout>
