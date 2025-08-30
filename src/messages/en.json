@@ -320,6 +320,65 @@
       ]
     },
 
+    "certifications":{
+        "pageTitle": "My Certifications",
+        "subtitle": "Certifications obtained in different fields",
+        "filterCat": "Filter by Category",
+        "showFilter" : "Show Filters",
+        "hideFilter": "Hide Filters",
+        "all": "All",
+        "wd": "Web Développement",
+        "language": "Languages",
+        "other": "Others",
+        "adviceTitle" : "Continuing to learn and earn new certifications",
+        "adviceContent" : "Continuous learning is at the core of my professional philosophy. Each certification represents a milestone in my development journey and helps me stay up to date with the latest technologies and methodologies.",
+        "sg": "Skills Gained",
+        "tu": "Tools Used",
+        "vc" : "View Certificate",
+        "Verify": "Verify",
+
+        "certifData": [
+            {
+                "id": "m",
+                "title": "Python 101 for Data Science",
+                "issuer": "IBM (via Cognitive Class)",
+                "date": "August 2025",
+                "description": "The Python 101 for Data Science certificate from Cognitive Class/IBM introduces Python programming with a focus on data science. It covers data manipulation with Pandas and NumPy, object-oriented programming, as well as file I/O and task automation.",
+                "skills": ["Pandas", "Numpy", "Python", "Data Science"],
+                "tools": ["Python", "Jupyter Notebook", "Skills Network Labs"],
+                "imageUrl": "/images/certifications/python101Data.png",
+                "credentialUrl": "https://courses.cognitiveclass.ai/certificates/158abce193914998a3bfe8c4cc5ec3c1",
+                "category": "python"
+            },
+
+            {
+                "id": "ibm-dv",
+                "title": "Data Visualization with Python",
+                "issuer": "IBM (via Cognitive Class)",
+                "date":"August 2025",
+                "description": "The Data Visualization with Python certificate (Cognitive Class/IBM) introduces best practices in data visualization using Matplotlib and Seaborn to create various statistical charts. It also teaches the use of Folium for mapping and geospatial data visualization.",
+                "skills": ["Visualization","Pandas", "Seaborn", "Python", "Data Science","Folium"],
+                "tools": ["Python", "Jupyter Notebook", "Skills Network Labs"],
+                "imageUrl": "/images/certifications/dvWithPython.png",
+                "credentialUrl": "https://courses.cognitiveclass.ai/certificates/367cc863d35c4a6e85f5667f828acbaf",
+                "category": "data-science"
+            },
+
+            {
+                "id": "ibm-da",
+                "title": "Data Analysis with Python",
+                "issuer": "IBM (via Cognitive Class)",
+                "date":"August 2025",
+                "description": "This course trains in advanced data analysis with Python, from importing and preprocessing datasets to comprehensive statistical exploration. It also covers designing, building, and evaluating predictive models to generate actionable insights.",
+                "skills": ["Exploratory Data Analysis (EDA)", "Data Preprocessing","Pandas", "Python", "SciPy","Data Cleaning"],
+                "tools": ["Python", "Jupyter Notebook", "Skills Network Labs", "Scikit-learn"],
+                "imageUrl": "/images/certifications/IbmDA101.png",
+                "credentialUrl": "https://courses.cognitiveclass.ai/certificates/b88a0742e9e249f5ad014dcdf5182bd4",
+                "category": "data-science"
+            }
+        ]
+    },
+
     "projects":{
         "projectsTitle":"Projects",
         "projectsContent": "Here, you’ll find a selection of my personal and professional projects: Data Science, AI, full-stack web development, and tools. Click on “See more” to explore the technical details, features, and implementation choices.",
@@ -327,6 +386,7 @@
         "features": "Features",
         "pOne": "Click on the source code to view the files related to the project.",
         "pTwo": "Once on GitHub, check the README.md file for more information.",
+        "seeMore" : "See More",
         "projectsData":[
             {
                 "id": "pfe",
@@ -347,7 +407,6 @@
                     "Search and filtering engine for CVs and candidates",
                     "Interactive dashboard displaying key HR KPIs"
                 ],
-                "demoUrl": "https://example.com/demo-ats",
                 "sourceUrl": "https://github.com/Abelkouadio95/Cv_analyzer_pfe_project"
                 },
 
@@ -368,7 +427,7 @@
                     "Real-time prediction with confidence level",
                     "Responsive design adapted to all devices"
                 ],
-                "demoUrl": "https://example.com/demo-credit",
+                "demoUrl": "https://youtu.be/c5ZMGYVpDBI",
                 "sourceUrl": "https://github.com/Abelkouadio95/Credit_Risk_Prediction_using_MachineLearning"
                 },
 
@@ -390,7 +449,6 @@
                     "Animated sections",
                     "Integration of icons and charts to illustrate skills and projects (React Icons, Recharts)"
                 ],
-                "demoUrl": "https://example.com/portfolio",
                 "sourceUrl": "https://github.com/Abelkouadio95/portfolio"
                 },
 
@@ -406,7 +464,6 @@
                 ],
                 "imageSrc": "/images/projects/houseprice.jpg",
                 "tags": ["Python", "Pandas", "Numpy", "Scikit-learn", "Machine Learning"],
-                "demoUrl": "https://example.com/demo-ats",
                 "sourceUrl": "https://github.com/Abelkouadio95/House_price_prediction"
                 },
 
@@ -421,7 +478,6 @@
                 ],
                 "imageSrc": "/images/projects/DataAnalysis.png",
                 "tags": ["Python", "Pandas", "Seaborn", "Numpy", "Matplotlib", "Jupyter Notebook", "Google Colab"],
-                "demoUrl": "https://example.com/demo-ats",
                 "sourceUrl": "https://github.com/Abelkouadio95/Collection-Python-Data-Analysis"
                 },
 
@@ -436,7 +492,6 @@
                 ],
                 "imageSrc": "/images/projects/powerbi.webp",
                 "tags": ["Power BI", "Power Query", "Excel"],
-                "demoUrl": "https://example.com/demo-ats",
                 "sourceUrl": "https://github.com/Abelkouadio95/Data-Analysis-using-PowerBi"
                 }
         ]

@@ -57,5 +57,5 @@ export interface Certification {
   tools: string[];
   imageUrl: string;
   credentialUrl?: string;
-  category: 'data-science' | 'web-development' | 'machine-learning' | 'language' | 'other';
+  category: 'data-science' | 'web-development' | 'machine-learning' | 'language' | 'python'| 'other';
 }
