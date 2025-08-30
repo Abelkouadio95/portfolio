@@ -8,10 +8,6 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
-  i18n: {
-    locales: ['fr', 'en'],
-    defaultLocale: 'fr',
-  },
 };
 
 export default withNextIntl(nextConfig);
