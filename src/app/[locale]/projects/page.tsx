@@ -3,7 +3,8 @@ import ProjectsClient from "@/components/projects/ProjectsClient";
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'projects' });
   
   return {
@@ -26,12 +27,21 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function Projects() {
-    return(
-        <main>
-            <Layout>
-                <ProjectsClient />
-            </Layout>
-        </main>
-    )
+export async function generateStaticParams(): Promise<{ locale: string }[]> {
+  return [
+    { locale: 'en' },
+    { locale: 'fr' },
+  ];
+}
+
+
+export default function Projects({ params }: { params: Promise<{ locale: string }> }) {
+  const _ = params;
+  return(
+      <main>
+          <Layout>
+              <ProjectsClient />
+          </Layout>
+      </main>
+  )
 }

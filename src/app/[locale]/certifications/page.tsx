@@ -4,7 +4,8 @@ import CertificationsClient from "@/components/certifications/CertificationsClie
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'certifications' });
   
   return {
@@ -27,14 +28,23 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function Certifications() {
-    return(
-        <Layout>
-            <div className="pt-24">
-                <AnimatedSection>
-                    <CertificationsClient />
-                </AnimatedSection>
-            </div>  
-        </Layout>
-    )
+export async function generateStaticParams(): Promise<{ locale: string }[]> {
+  return [
+    { locale: 'en' },
+    { locale: 'fr' },
+  ];
+}
+
+
+export default function Certifications({ params }: { params: Promise<{ locale: string }> }) {
+  const _ = params;
+  return(
+      <Layout>
+          <div className="pt-24">
+              <AnimatedSection>
+                  <CertificationsClient />
+              </AnimatedSection>
+          </div>  
+      </Layout>
+  )
 }

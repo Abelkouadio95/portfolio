@@ -185,7 +185,7 @@ export default function CertificationCard({ certification }: CertificationCardPr
                       </p>
                       {imageError && (
                         <p className="text-xs text-red-500 mt-2">
-                          Erreur de chargement de l'image
+                          Erreur de chargement de l&#39;image
                         </p>
                       )}
                     </div>

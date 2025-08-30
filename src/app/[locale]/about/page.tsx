@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import AboutClient from '../../../components/aboutSections/AboutClient';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'about' });
   
   return {
@@ -25,6 +26,14 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function About() {
-    return <AboutClient />;
+export async function generateStaticParams(): Promise<{ locale: string }[]> {
+  return [
+    { locale: 'en' },
+    { locale: 'fr' },
+  ];
+}
+
+export default async function About({ params }: { params: Promise<{ locale: string }> }) {
+  const _ = params;
+  return <AboutClient />;
 }

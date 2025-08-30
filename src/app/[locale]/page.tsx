@@ -3,8 +3,8 @@ import { getTranslations } from 'next-intl/server';
 import HomePageClient from '@/components/HomePageClient';
 
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home' });
   
   return {
@@ -27,7 +27,17 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function HomePageLocale() {
+
+export async function generateStaticParams(): Promise<{ locale: string }[]> {
+  return [
+    { locale: 'en' },
+    { locale: 'fr' },
+  ];
+}
+
+
+export default function HomePageLocale({ params }: { params: Promise<{ locale: string }> }) {
+  const _ = params;
   return (
     <main className="flex items-center text-dark w-full min-h-screen pt-16 ">
       <HomePageClient />
