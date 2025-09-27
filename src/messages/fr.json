@@ -23,7 +23,7 @@
         "profil": "Motivé et passionné par la data science et l'IA, j'ai acquis une solide expérience en informatique et électronique au cours de mes stages. J'ai développé des compétences solides en analyse de données et en développement logiciel, que je souhaite mettre au service d'une entreprise ambitieuse. Mon parcours académique m'a permis de maîtriser les concepts fondamentaux de la science des données et je suis prêt à relever de nouveaux défis. Je suis rapidement opérationnel et je suis certain de pouvoir apporter une contribution significative à votre équipe et être à la hauteur de la confiance qui me sera accordé.",
         "experienceData": [
             {
-                "title": "Stage Data Science/IA & Developpement Fullstack",
+                "title": "Stage Data Science/IA & Développement Fullstack",
                 "company": "ATLECS : ATLas Engineering & Consulting Society",
                 "location": "Fez, MAROC",
                 "period": "Février 2025 - Juillet 2025",
@@ -52,7 +52,7 @@
                 "technologies": ["Python", "Machine learning", "FastAPI"]
             },
             {
-                "title": "Freelance Developpemnt Web",
+                "title": "Freelance Développement Web",
                 "company": "SMSD : Societé Marocaine De Santé Digitale",
                 "period": "Juin 2023",
                 "location": "Rabat, MAROC",
@@ -66,7 +66,7 @@
                 "technologies": ["Python", "Django", "SQL",  "Agile"]
             },
             {
-                "title": "Stage Developpeur Full  Stack",
+                "title": "Stage Développeur Full  Stack",
                 "company": "Ensam Rabat",
                 "location": "Rabat, MAROC",
                 "period": "Mai 2023 - Juillet 2023",
@@ -335,6 +335,19 @@
         "Verify": "Vérifier",
 
         "certifData": [
+            {
+            "id": "fcc_data_analysis_python",
+            "title": "Data Analysis with Python",
+            "issuer": "freeCodeCamp",
+            "date": "Septembre 2025",
+            "description": "La certification Data Analysis with Python de freeCodeCamp couvre la manipulation de données avec Pandas et NumPy, la visualisation avec Matplotlib et Seaborn, ainsi que l’application de statistiques descriptives et inférentielles. Le programme aborde également le nettoyage de données, le traitement de fichiers CSV/JSON, et des projets pratiques appliqués à des jeux de données réels.",
+            "skills": ["Python", "Pandas", "NumPy", "Data Cleaning", "Data Visualization", "Statistiques", "Analyse de données"],
+            "tools": ["Python", "Jupyter Notebook", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+            "imageUrl": "/images/certifications/freecodecampDataAnalysisWithPython.png",
+            "credentialUrl": "https://freecodecamp.org/certification/fcc-411f479b-2ea6-487d-b23d-c27abbbccff1/data-analysis-with-python-v7",
+            "category": "data-science"
+            },
+
             {
                 "id": "python101",
                 "title": "Python 101 for Data Science",
