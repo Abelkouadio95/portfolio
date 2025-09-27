@@ -339,7 +339,20 @@
 
         "certifData": [
             {
-                "id": "m",
+            "id": "fcc_data_analysis_python",
+            "title": "Data Analysis with Python",
+            "issuer": "freeCodeCamp",
+            "date": "September 2025",
+            "description": "The Data Analysis with Python certification from freeCodeCamp covers data manipulation with Pandas and NumPy, visualization with Matplotlib and Seaborn, and the application of descriptive and inferential statistics. The program also addresses data cleaning, working with CSV/JSON files, and hands-on projects using real-world datasets.",
+            "skills": ["Python", "Pandas", "NumPy", "Data Cleaning", "Data Visualization", "Statistics", "Data Analysis"],
+            "tools": ["Python", "Jupyter Notebook", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+            "imageUrl": "/images/certifications/freecodecampDataAnalysisWithPython.png",
+            "credentialUrl": "https://freecodecamp.org/certification/fcc-411f479b-2ea6-487d-b23d-c27abbbccff1/data-analysis-with-python-v7",
+            "category": "data-science"
+            },
+
+            {
+                "id": "python101",
                 "title": "Python 101 for Data Science",
                 "issuer": "IBM (via Cognitive Class)",
                 "date": "August 2025",
