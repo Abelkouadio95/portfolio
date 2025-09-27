@@ -46,7 +46,7 @@ export default function CertificationCard({ certification }: CertificationCardPr
 
   return (
     <>
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 group">
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl hover:border-blue-600 transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 group">
 
         { /* Header avec icône de catégorie */}
         <div className="p-6 pb-4">
