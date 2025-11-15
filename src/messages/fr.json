@@ -336,16 +336,29 @@
 
         "certifData": [
             {
-            "id": "fcc_data_analysis_python",
-            "title": "Data Analysis with Python",
-            "issuer": "freeCodeCamp",
-            "date": "Septembre 2025",
-            "description": "La certification Data Analysis with Python de freeCodeCamp couvre la manipulation de données avec Pandas et NumPy, la visualisation avec Matplotlib et Seaborn, ainsi que l’application de statistiques descriptives et inférentielles. Le programme aborde également le nettoyage de données, le traitement de fichiers CSV/JSON, et des projets pratiques appliqués à des jeux de données réels.",
-            "skills": ["Python", "Pandas", "NumPy", "Data Cleaning", "Data Visualization", "Statistiques", "Analyse de données"],
-            "tools": ["Python", "Jupyter Notebook", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
-            "imageUrl": "/images/certifications/freecodecampDataAnalysisWithPython.png",
-            "credentialUrl": "https://freecodecamp.org/certification/fcc-411f479b-2ea6-487d-b23d-c27abbbccff1/data-analysis-with-python-v7",
-            "category": "data-science"
+                "id": "fcc_machine_learning_python",
+                "title": "Machine Learning with Python",
+                "issuer": "freeCodeCamp",
+                "date": "Novembre 2025",
+                "description": "La certification Machine Learning with Python de freeCodeCamp aborde les fondements de l’apprentissage automatique avec Python. Elle inclut l’utilisation du framework TensorFlow pour construire et entraîner des réseaux de neurones, ainsi que l’étude des algorithmes classiques de machine learning (régression, classification etc), des réseaux convolutionnels pour l’image et du traitement du langage naturel (NLP). Le programme prévoit plusieurs projets pratiques (classification d’images, moteur de recommandation, etc.).",
+                "skills": ["Python", "TensorFlow", "NLP", "Neural Networks", "Deep Learning", "Machine Learning", "Supervised and Unsupervised Learning"],
+                "tools": ["Python", "TensorFlow", "NumPy", "Pandas", "Matplotlib"],
+                "imageUrl": "/images/certifications/fcc_mlwp_certificate.png",
+                "credentialUrl": "https://www.freecodecamp.org/certification/fcc-411f479b-2ea6-487d-b23d-c27abbbccff1/machine-learning-with-python-v7",
+                "category": "machine-learning"
+            },
+
+            {
+                "id": "fcc_data_analysis_python",
+                "title": "Data Analysis with Python",
+                "issuer": "freeCodeCamp",
+                "date": "Septembre 2025",
+                "description": "La certification Data Analysis with Python de freeCodeCamp couvre la manipulation de données avec Pandas et NumPy, la visualisation avec Matplotlib et Seaborn, ainsi que l’application de statistiques descriptives et inférentielles. Le programme aborde également le nettoyage de données, le traitement de fichiers CSV/JSON, et des projets pratiques appliqués à des jeux de données réels.",
+                "skills": ["Python", "Pandas", "NumPy", "Data Cleaning", "Data Visualization", "Statistiques", "Analyse de données"],
+                "tools": ["Python", "Jupyter Notebook", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+                "imageUrl": "/images/certifications/freecodecampDataAnalysisWithPython.png",
+                "credentialUrl": "https://freecodecamp.org/certification/fcc-411f479b-2ea6-487d-b23d-c27abbbccff1/data-analysis-with-python-v7",
+                "category": "data-science"
             },
 
             {
