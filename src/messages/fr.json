@@ -400,6 +400,28 @@
         "seeMore" : "Voir Plus",
         "projectsData": [
             {
+                "id": "fraud_detection",
+                "title": "Détection intelligente de fraude bancaire",
+                "shortDescription": "Anticiper et prévenir les transactions frauduleuses grâce au machine learning.",
+                "longDescription": [
+                    "Ce projet vise à concevoir un système capable de détecter automatiquement les transactions suspectes et de limiter les risques financiers.",
+                    "Il combine l’ingénierie de features, l’entraînement de modèles de classification performants (Logistic Regression, KNN, XGBoost, Random Forest et Decision Tree ) et le déploiement d’une API web pour fournir des prédictions en temps réel.",
+                    "L’interface utilisateur permet de visualiser les probabilités de fraude, de tester des transactions et de générer des alertes automatiques, offrant ainsi une solution complète pour la surveillance bancaire."
+                ],
+                "imageSrc": "/images/projects/fraud1.webp",
+                "tags": ["Python", "Machine Learning","FastAPI", "KNN", "XGBoost", "Scikit-learn", "Pandas", "Jinja2"],
+                "features": [
+                    "Nettoyage et pré-traitement avancé des données transactionnelles.",
+                    "Sélection et création de features pertinentes pour améliorer la détection des fraudes.",
+                    "Entraînement et évaluation de modèles de classification robustes avec métriques adaptées (F1-score, précision, recall).",
+                    "API FastAPI pour prédiction en temps réel et intégration facile dans d’autres systèmes.",
+                    "Interface web intuitive pour tester les transactions et visualiser les probabilités de fraude.",
+                    "Alertes automatiques et visualisation claire des transactions à risque."
+                ],
+                "sourceUrl": "https://github.com/Abelkouadio95/FraudeShield-System"
+            },
+
+            {
                 "id": "pfe",
                 "title": "Système intelligent de traitement et d’analyse de CV",
                 "shortDescription": "Matching profil/mission avec NLP et extraction d'informations.",
