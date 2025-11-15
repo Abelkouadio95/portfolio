@@ -401,6 +401,29 @@
         "pTwo": "Once on GitHub, check the README.md file for more information.",
         "seeMore" : "See More",
         "projectsData":[
+            
+            {
+                "id": "fraud_detection",
+                "title": "Intelligent Bank Fraud Detection",
+                "shortDescription": "Anticipate and prevent fraudulent transactions using machine learning.",
+                "longDescription": [
+                    "This project aims to build a system capable of automatically detecting suspicious transactions and minimizing financial risks.",
+                    "It combines feature engineering, training of high-performance classification models (Logistic Regression, KNN, XGBoost, Random Forest, and Decision Tree), and deployment of a web API to provide real-time predictions.",
+                    "The user interface allows visualization of fraud probabilities, testing transactions, and generating automatic alerts, offering a complete solution for banking surveillance."
+                ],
+                "imageSrc": "/images/projects/fraud1.webp",
+                "tags": ["Python", "Machine Learning", "FastAPI", "KNN", "XGBoost", "Scikit-learn", "Pandas", "Jinja2"],
+                "features": [
+                    "Advanced cleaning and preprocessing of transactional data.",
+                    "Selection and creation of relevant features to improve fraud detection.",
+                    "Training and evaluation of robust classification models with appropriate metrics (F1-score, precision, recall).",
+                    "FastAPI for real-time prediction and easy integration with other systems.",
+                    "Intuitive web interface to test transactions and visualize fraud probabilities.",
+                    "Automatic alerts and clear visualization of high-risk transactions."
+                ],
+                "sourceUrl": "https://github.com/Abelkouadio95/FraudeShield-System"
+            },
+
             {
                 "id": "pfe",
                 "title": "Intelligent CV Processing and Analysis System",
