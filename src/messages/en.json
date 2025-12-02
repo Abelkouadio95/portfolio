@@ -343,7 +343,7 @@
                 "title": "Machine Learning with Python",
                 "issuer": "freeCodeCamp",
                 "date": "November 2025",
-                "description": "The Machine Learning with Python certification from freeCodeCamp covers the fundamentals of machine learning using Python. It includes using the TensorFlow framework to build and train neural networks, as well as classical machine learning algorithms such as regression, classification etc. The course also explores deep learning (CNNs for image tasks), natural language processing (NLP). The curriculum includes several practical projects (image classifier, recommendation engine etc.).",
+                "description": "The Machine Learning with Python certification from freeCodeCamp covers the fundamentals of machine learning using Python. It includes using the TensorFlow framework to build and train neural networks, as well as classical machine learning algorithms such as regression, classification etc. The course also explores deep learning (CNNs for image tasks), natural language processing (NLP). The curriculum includes several practical projects (image classifier, recommendation engine etc).",
                 "skills": ["Python", "TensorFlow", "NLP", "Neural Networks", "Deep Learning", "Machine Learning", "Supervised and Unsupervised Learning"],
                 "tools": ["Python", "TensorFlow", "NumPy", "Pandas", "Matplotlib"],
                 "imageUrl": "/images/certifications/fcc_mlwp_certificate.png",
