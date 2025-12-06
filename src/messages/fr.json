@@ -44,7 +44,7 @@
                 "period": "Juin 2024 - Juillet 2024",
                 "description": "Développement d'un modèle prédictif basé sur des algorithmes de machine learning pour l'octroi de crédits à la clientèle.",
                 "details" : [
-                    "Collecte, nettoyage, transformation et modélisation des données",
+                    "Collecte, nettoyage, transformation et modélisation des données.",
                     "Réalisation d'analyses exploratoires (EDA) permettant d'identifier les variables les plus discriminantes dans la prédiction du risque client.",
                     "Conception, entraînement et évaluation de plusieurs modèles (régression logistique, arbres de décision, KNN), avec comparaison des performances pour sélectionner le plus pertinent.",
                     "Développement d'une application web avec interface utilisateur, facilitant l'accès aux prédictions pour les équipes non techniques."
@@ -405,7 +405,7 @@
 
     "projects": {
         "projectsTitle": "Projets",
-        "projectsContent" : "Ici, vous trouverez une sélection de mes projets personnels et professionnels: data science, IA, web full‑stack et outils. Cliquez sur « Voir plus » pour découvrir les détails techniques, les fonctionnalités et les choix d'implémentation.",
+        "projectsContent" : "Ici, vous trouverez une sélection de mes projets personnels et professionnels: data science, IA, web full‑stack. Cliquez sur « Voir plus » pour découvrir les détails techniques, les fonctionnalités et les choix d'implémentation.",
         "tech":"Technologies et outils utilisés",
         "features": "Fonctionnalités",
         "pOne": "Cliquez sur code source pour voir les fichiers reliés au projet.",
