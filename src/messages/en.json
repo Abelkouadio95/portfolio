@@ -46,7 +46,7 @@
               "period": "June 2024 - July 2024",
               "description": "Development of a predictive model based on machine learning algorithms for customer credit granting.",
               "details" : [
-                  "Data collection, cleaning, transformation and modeling",
+                  "Data collection, cleaning, transformation and modeling.",
                   "Exploratory data analysis (EDA) to identify the most discriminating variables in customer risk prediction.",
                   "Design, training and evaluation of several models (logistic regression, decision trees, KNN), with performance comparison to select the most relevant one.",
                   "Development of a web application with user interface, facilitating access to predictions for non-technical teams."
@@ -407,7 +407,7 @@
 
     "projects":{
         "projectsTitle":"Projects",
-        "projectsContent": "Here, you’ll find a selection of my personal and professional projects: Data Science, AI, full-stack web development, and tools. Click on “See more” to explore the technical details, features, and implementation choices.",
+        "projectsContent": "Here, you’ll find a selection of my personal and professional projects: Data Science, AI, full-stack web development. Click on “See more” to explore the technical details, features, and implementation choices.",
         "tech": "Tech Stack",
         "features": "Features",
         "pOne": "Click on the source code to view the files related to the project.",
