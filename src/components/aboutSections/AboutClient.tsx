@@ -7,7 +7,7 @@ import SkillsSection from "@/components/aboutSections/SkillsSection";
 import EducationSection from "@/components/aboutSections/EducationSection";
 import Image from "next/image";
 import Layout from "@/components/layout/layout";
-import pp from "../../../public/images/profiles/pp.jpg";
+import me1 from "../../../public/images/profiles/me1.jpeg";
 import ProfilSection from "@/components/aboutSections/ProfilSection";
 import { FaBriefcase } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
@@ -28,7 +28,7 @@ export default function AboutClient() {
                                 <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-yellow-400/40 via-purple-500/40 to-blue-500/40 blur-2xl opacity-60 group-hover:opacity-80 transition-opacity"></div>
                                 <div className="relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-purple-400/30 dark:ring-purple-500/30 shadow-2xl shadow-purple-500/10">
                                     <Image 
-                                    src={pp} 
+                                    src={me1} 
                                     alt="Photo de profil" 
                                     fill
                                     className="object-cover object-bottom"

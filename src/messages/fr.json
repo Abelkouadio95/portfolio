@@ -23,6 +23,26 @@
         "profil": "Motivé et passionné par la data science et l'IA, j'ai acquis une solide expérience en informatique et électronique au cours de mes stages. J'ai développé des compétences solides en analyse de données et en développement logiciel, que je souhaite mettre au service d'une entreprise ambitieuse. Mon parcours académique m'a permis de maîtriser les concepts fondamentaux de la science des données et je suis prêt à relever de nouveaux défis. Je suis rapidement opérationnel et je suis certain de pouvoir apporter une contribution significative à votre équipe et être à la hauteur de la confiance qui me sera accordé.",
         "experienceData": [
             {
+                "title": "Stage Data Analyst / Business Analyst",
+                "company": "AGH Data Agency Holding SA",
+                "location": "Kenitra MAROC",
+                "period": "Décembre 2025 - à ce jour",
+                "description": "Stage axé sur l’analyse de données métier visant à accompagner la conception d’applications et l’optimisation des décisions produit.",
+                "details" : [
+                    "Participation à l’analyse stratégique et fonctionnelle de plusieurs projets (4 +) d’applications mobiles (bien-être, IA santé mentale, natural beauty etc, ).",
+                    "Collecte, nettoyage et structuration des données pour garantir leur qualité et leur exploitabilité via Web scraping (Python, BeautifulSoup, Scrapy), APIs publiques, sources open data.",
+                    "Obtention d’un taux de données exploitables de 70–85% après nettoyage",
+                    "Réalisation d’études de marché et benchmarks concurrentiels incluant 40 à 50 concurrents par projet afin d’identifier :opportunités de positionnement, modèles économiques dominants (freemium, abonnement, B2B), stratégies de rétention, fonctionnalités différenciantes, etc.",
+                    "Analyse comparative de 200+ fonctionnalités pour identifier les leviers de différenciation produit.",
+                    "Transformation des insights concurrentiels en recommandations produit concrètes (priorisation des features, stratégie tarifaire, segmentation cible).",
+                    "Conception de dashboards interactifs (Power BI ) incluant",
+                    "Préparation de datasets analytiques destinés aux équipes produit et décisionnelles.",
+                    "Réalisation d’analyses exploratoires (EDA) pour identifier des patterns et indicateurs clés utiles à l’amélioration du produit."
+                    
+                ],
+                "technologies": ["Excel", "SQL", "Power BI", "Java", "Python", "Mysql", "UML", "Web Scraping"]
+            },
+            {
                 "title": "Stage Data Science/IA & Développement Fullstack",
                 "company": "ATLECS : ATLas Engineering & Consulting Society",
                 "location": "Fez, MAROC",
