@@ -24,61 +24,81 @@
       "edu": "Education",
       "profil": "Motivated and passionate about data science and AI, I have acquired solid experience in computer science and electronics during my internships. I have developed strong skills in data analysis and software development, which I want to put at the service of an ambitious company. My academic background has allowed me to master the fundamental concepts of data science and I am ready to take on new challenges. I am quickly operational and I am certain that I can make a significant contribution to your team and live up to the trust that will be placed in me.",
       "experienceData": [
-          {
-              "title": "Data Science/AI & Full Stack Development Internship",
-              "company": "ATLECS : ATLas Engineering & Consulting Society",
-              "location": "Fez, MOROCCO",
-              "period": "February 2025 - July 2025",
-              "description": "Design of a data collection system aimed at optimizing the recruitment of engineers and their placement with clients.",
-              "details" : [
-                  "Development of an interactive dashboard allowing HR teams to monitor key KPIs in real-time (consultants on mission, pending CVs...), improving decision-making.",
-                  "Integration of an OCR module to automatically extract information from CVs, reducing manual entry and associated errors.",
-                  "Design and training of an NLP model (SpaCy) for intelligent data extraction (name, skills, experiences...), facilitating candidate pre-selection.",
-                  "Development of an interface for matching profiles and missions (profile/mission matching).",
-                  "Contribution to Full Stack architecture (Spring Boot, MySQL), ensuring scalability and smooth integration with internal tools."
-              ],
-              "technologies": ["Computer Vision", "NLP", "Spring-boot", "Java", "Python", "Mysql"]
-          },
-          {
-              "title": "Data Science AI Internship",
-              "company": "Quanta EDGE",
-              "location": "Brussels, BELGIUM - remote",
-              "period": "June 2024 - July 2024",
-              "description": "Development of a predictive model based on machine learning algorithms for customer credit granting.",
-              "details" : [
-                  "Data collection, cleaning, transformation and modeling.",
-                  "Exploratory data analysis (EDA) to identify the most discriminating variables in customer risk prediction.",
-                  "Design, training and evaluation of several models (logistic regression, decision trees, KNN), with performance comparison to select the most relevant one.",
-                  "Development of a web application with user interface, facilitating access to predictions for non-technical teams."
-              ],
-              "technologies": ["Python", "Machine learning", "FastAPI"]
-          },
-          {
-              "title": "Web Development Freelance",
-              "company": "SMSD : Moroccan Digital Health Society",
-              "period": "June 2023",
-              "location": "Rabat, MOROCCO",
-              "description": "Development of an operational website for the SMSD organization, from design to production.",
-              "details": [
-                  "Participation in the analysis of functional and technical needs of the organization.",
-                  "Development of the site architecture, key features, and user interface integration.",
-                  "Coordination and management of development team tasks (work distribution, progress monitoring, synchronization meetings).",
-                  "Testing, debugging, and continuous improvement of the site based on user feedback"
-              ],
-              "technologies": ["Python", "Django", "SQL",  "Agile"]
-          },
-          {
-              "title": "Full Stack Developer Internship",
-              "company": "Ensam Rabat",
-              "location": "Rabat, MOROCCO",
-              "period": "May 2023 - July 2023",
-              "description": "Development of an intelligent hydroponic greenhouse management system",
-              "details": [
-                  "Design of an interactive user interface (dashboard) for real-time monitoring of key parameters (temperature, humidity, pH, EC).",
-                  "Results: 30% reduction in water consumption compared to manual management. 25% improvement in yield per m² thanks to optimization of growing conditions. Automation rate: more than 80% of routine actions managed without human intervention."
-              ],
-              "technologies": ["JavaScript", "Python", "FastAPI", "Jinja"]
-          }
+        {
+            "title": "Data & Business Analyst Internship",
+            "company": "AGH Data Agency Holding SA",
+            "location": "Kenitra MAROC",
+            "period": "December 2025 - Now",
+            "description": "Internship focused on business data analysis to support application design and optimize product decision-making.",
+            "details" : [
+                "Contributed to the strategic and functional analysis of multiple mobile application projects (4+), including wellness, AI-driven mental health, and natural beauty applications.",
+                "Collected, cleaned, and structured data to ensure quality and usability using web scraping techniques (Python, BeautifulSoup, Scrapy), public APIs, and open data sources.",
+                "Achieved a usable data rate of 70–85% after data cleaning and preprocessing.",
+                "Conducted market studies and competitive benchmarks involving 40 to 50 competitors per project to identify positioning opportunities, dominant business models (freemium, subscription, B2B), retention strategies, and differentiating features.",
+                "Performed a comparative analysis of 200+ features to identify key product differentiation levers.",
+                "Translated competitive insights into concrete product recommendations, including feature prioritization, pricing strategy, and target segmentation.",
+                "Designed interactive dashboards using Power BI to support product and strategic decision-making.",
+                "PPrepared analytical datasets for product and executive teams.",
+                "Conducted exploratory data analysis (EDA) to identify patterns and key indicators supporting product improvement."
+                
+            ],
+            "technologies": ["Excel", "SQL", "Power BI", "Java", "Python", "Mysql", "UML", "Web Scraping"]
+        },
+        {
+            "title": "Data Science/AI & Full Stack Development Internship",
+            "company": "ATLECS : ATLas Engineering & Consulting Society",
+            "location": "Fez, MOROCCO",
+            "period": "February 2025 - July 2025",
+            "description": "Design of a data collection system aimed at optimizing the recruitment of engineers and their placement with clients.",
+            "details" : [
+                "Development of an interactive dashboard allowing HR teams to monitor key KPIs in real-time (consultants on mission, pending CVs...), improving decision-making.",
+                "Integration of an OCR module to automatically extract information from CVs, reducing manual entry and associated errors.",
+                "Design and training of an NLP model (SpaCy) for intelligent data extraction (name, skills, experiences...), facilitating candidate pre-selection.",
+                "Development of an interface for matching profiles and missions (profile/mission matching).",
+                "Contribution to Full Stack architecture (Spring Boot, MySQL), ensuring scalability and smooth integration with internal tools."
+            ],
+            "technologies": ["Computer Vision", "NLP", "Spring-boot", "Java", "Python", "Mysql"]
+        },
+        {
+            "title": "Data Science AI Internship",
+            "company": "Quanta EDGE",
+            "location": "Brussels, BELGIUM - remote",
+            "period": "June 2024 - July 2024",
+            "description": "Development of a predictive model based on machine learning algorithms for customer credit granting.",
+            "details" : [
+                "Data collection, cleaning, transformation and modeling.",
+                "Exploratory data analysis (EDA) to identify the most discriminating variables in customer risk prediction.",
+                "Design, training and evaluation of several models (logistic regression, decision trees, KNN), with performance comparison to select the most relevant one.",
+                "Development of a web application with user interface, facilitating access to predictions for non-technical teams."
+            ],
+            "technologies": ["Python", "Machine learning", "FastAPI"]
+        },
+        {
+            "title": "Web Development Freelance",
+            "company": "SMSD : Moroccan Digital Health Society",
+            "period": "June 2023",
+            "location": "Rabat, MOROCCO",
+            "description": "Development of an operational website for the SMSD organization, from design to production.",
+            "details": [
+                "Participation in the analysis of functional and technical needs of the organization.",
+                "Development of the site architecture, key features, and user interface integration.",
+                "Coordination and management of development team tasks (work distribution, progress monitoring, synchronization meetings).",
+                "Testing, debugging, and continuous improvement of the site based on user feedback"
+            ],
+            "technologies": ["Python", "Django", "SQL",  "Agile"]
+        },
+        {
+            "title": "Full Stack Developer Internship",
+            "company": "Ensam Rabat",
+            "location": "Rabat, MOROCCO",
+            "period": "May 2023 - July 2023",
+            "description": "Development of an intelligent hydroponic greenhouse management system",
+            "details": [
+                "Design of an interactive user interface (dashboard) for real-time monitoring of key parameters (temperature, humidity, pH, EC).",
+                "Results: 30% reduction in water consumption compared to manual management. 25% improvement in yield per m² thanks to optimization of growing conditions. Automation rate: more than 80% of routine actions managed without human intervention."
+            ],
+            "technologies": ["JavaScript", "Python", "FastAPI", "Jinja"]
+        }
       ],
 
       "data": "Data & AI",
@@ -338,6 +358,54 @@
         "Verify": "Verify",
 
         "certifData": [
+            {
+                "id": "google_data_analytics_module4",
+                "title": "Process Data from Dirty to Clean",
+                "issuer": "GOOGLE",
+                "date": "February 2026",
+                "description": "This module addresses data quality and integrity challenges by identifying different types of data integrity and associated risks. It introduces the use of SQL to clean data (basic string functions), develop simple database queries, and verify the accuracy and reliability of data cleaning results.",
+                "skills": ["SQL", "Spreadsheet Software", "Sampling (Statistics)", "Data Cleansing", "Data Transformation", "Data Processing", "Data Quality"],
+                "tools": ["BigQuery", "Google Sheets / Excel"],
+                "imageUrl": "/images/certifications/process.png",
+                "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/JSFD4D6MKF8Y",
+                "category": "data-science"
+            },
+            {
+                "id": "google_data_analytics_module3",
+                "title": "Prepare Data for Exploration",
+                "issuer": "GOOGLE",
+                "date": "February 2026",
+                "description": "This module covers key principles of data preparation, including factors to consider when collecting data and the importance of distinguishing between biased and unbiased data. It introduces the fundamentals of databases, their functions and components, and presents best practices for organizing data to ensure reliable and actionable analysis.",
+                "skills": ["Data Import/Export", "SQL", "Data Storage", "Google Sheets", "Databases", "Data Collection"],
+                "tools": ["BigQuery", "Google Sheets / Excel"],
+                "imageUrl": "/images/certifications/prepare.png",
+                "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/GJEDLJ0BKZIB",
+                "category": "data-science"
+            },
+            {
+                "id": "google_data_analytics_module2",
+                "title": "Ask Questions to Make Data-Driven Decisions",
+                "issuer": "GOOGLE",
+                "date":"February 2026",
+                "description": "This module focuses on the Ask phase of the data analysis process by applying a structured problem-solving approach to typical analytical scenarios. It demonstrates how data supports decision-making, introduces the use of spreadsheets to organize and manage data, and develops the foundations of structured thinking essential for the data analyst role.",
+                "skills": ["Dashboard", "Smart Goals", "Data-Driven Decision-Making", "Stakeholder Communications", "Business Analysis"],
+                "tools": ["Google Sheets / Excel"],
+                "imageUrl": "/images/certifications/ask.png",
+                "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/EQ3CYXHFPS17",
+                "category": "data-science"
+            },
+            {
+                "id": "google_data_analytics_module1",
+                "title": "Foundations: Data, Data, Everywhere",
+                "issuer": "GOOGLE",
+                "date": "February 2026",
+                "description": "This module introduces the fundamental concepts of data analytics, including the definition of data, the data analysis process, and data ecosystems. It emphasizes analytical thinking through practical examples, presents the main tools used by data analysts (spreadsheets, query languages, and data visualization tools), and clarifies the role of a data analyst and its applications across different job roles.",
+                "skills": ["Data Collection", "Spreadsheet Software", "Data Analysis", "Data-Driven Decision-Making", "Business Analytics"],
+                "tools": ["Google Sheets / Excel"],
+                "imageUrl": "/images/certifications/foundation.png",
+                "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/DJLCOIYG373Z",
+                "category": "data-science"
+            },
             {
                 "id": "fcc_machine_learning_python",
                 "title": "Machine Learning with Python",
