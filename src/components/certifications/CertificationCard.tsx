@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { FaEye, FaExternalLinkAlt, FaCalendarAlt, FaBuilding, FaTools, FaStar } from 'react-icons/fa';
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { motion } from 'framer-motion';
 
 interface CertificationCardProps {
   certification: Certification;
@@ -46,7 +47,12 @@ export default function CertificationCard({ certification }: CertificationCardPr
 
   return (
     <>
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl hover:border-blue-600 transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 group">
+      <motion.div
+        whileHover={{
+        scale: 1.02, boxShadow: '0 0 20px rgba(156, 116, 250, 0.32)'}}
+        transition={{ duration: 0.03, ease: 'easeOut' }}
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-violet-500 group"
+      >
 
         { /* Header avec icône de catégorie */}
         <div className="p-6 pb-4">
@@ -58,7 +64,7 @@ export default function CertificationCard({ certification }: CertificationCardPr
           </div>
           
           {/* Titre et émetteur */}
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-600 transition-colors">
             {certification.title}
           </h3>
           
@@ -140,7 +146,7 @@ export default function CertificationCard({ certification }: CertificationCardPr
             </a>
           )}
         </div>
-      </div>
+      </motion.div>
 
       {/* Modal pour afficher l'image du certificat */}
       {showImage && (
