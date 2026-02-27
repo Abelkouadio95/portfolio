@@ -59,7 +59,7 @@ export default function CertificationsClient() {
           {categories.slice(1).map((category) => (
             <div
               key={category}
-              className="bg-white dark:bg-gray-800 rounded-lg p-3 md:p-4 text-center border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer"
+              className="bg-white dark:bg-gray-800 rounded-lg p-3 md:p-4 text-center border border-gray-200 dark:border-gray-700 hover:shadow-md hover:shadow-violet-200 transition-shadow cursor-pointer"
               onClick={() => handleCategoryChange(category)}
             >
               <div className="text-xl md:text-2xl mb-1 md:mb-2">
