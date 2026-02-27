@@ -14,9 +14,9 @@ export default function ProjectCard({ project, onVoirPlus }: ProjectCardProps) {
   const t = useTranslations('projects');
   return (
     <motion.div
-      whileHover={{ scale: 1.1, boxShadow: "0px 8px 20px rgba(0,0,0,0.4)" }}
+      whileHover={{ scale: 1.02, boxShadow: '0 0 20px rgba(156, 116, 250, 0.32)' }}
       transition={{ duration: 0.05, ease: "easeOut" }}
-      className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all overflow-hidden hover:border-gray-700 "
+      className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all overflow-hidden hover:border-violet-500 "
     >
       <div className="relative h-48 w-full overflow-hidden">
         <Image
