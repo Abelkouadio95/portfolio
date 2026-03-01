@@ -1,6 +1,6 @@
 {
     "home":{
-        "title": "Turning past data into the future I build.",
+        "title": "From data collection to analysis: data at the core of decision-making.",
         "subtitle": "Hello, I'm Abel Kouadio, Data Scientist & Software Engineer",
         "description": "Passionate about data, I combine the descriptive analysis of a Data Analyst with the predictive power of a Data Scientist. I explore, clean, and interpret data to extract insights, then design machine learning models capable of turning this information into concrete solutions.",
         "goal": "My goal: helping companies understand their present and anticipate their future.",
@@ -22,7 +22,12 @@
       "profilname": "About me",
       "competence": "Technical Skills",
       "edu": "Education",
-      "profil": "Motivated and passionate about data science and AI, I have acquired solid experience in computer science and electronics during my internships. I have developed strong skills in data analysis and software development, which I want to put at the service of an ambitious company. My academic background has allowed me to master the fundamental concepts of data science and I am ready to take on new challenges. I am quickly operational and I am certain that I can make a significant contribution to your team and live up to the trust that will be placed in me.",
+      "profil":[
+            "Specialized in data science and data analytics, I have a strong command of the end-to-end data pipeline, from data collection and preparation to analysis, modeling, and insight generation.",
+            "Through my professional experiences, I have worked on real-world projects involving web scraping, databases, exploratory data analysis, visualization, and data-driven product decision-making.",
+            "I also have solid foundations in software development and machine learning, including model design, API integration, and initial deployment processes.",
+            "Autonomous and quickly operational, I am motivated to contribute my technical and analytical skills to ambitious, high-impact data-driven projects."
+        ],
       "experienceData": [
         {
             "title": "Data & Business Analyst Internship",
@@ -358,6 +363,18 @@
         "Verify": "Verify",
 
         "certifData": [
+             {
+                "id": "google_data_analytics_module5",
+                "title": "Analyze Data to Answer Questions",
+                "issuer": "GOOGLE",
+                "date": "February 2026",
+                "description": "This module focuses on analyzing data to answer business questions. It highlights the importance of organizing data prior to analysis using sorting and filtering, covers data conversion and formatting, and introduces the use of SQL functions and syntax to combine data from multiple database tables. It also explores the use of spreadsheet functions to perform basic calculations and generate actionable insights.",
+                "skills": ["SQL", "Spreadsheet Software","Data Manipulation", "Analytics", "Excel Formulas", "Data Transformation", "Data Processing", "Pivot Tables And Charts"],
+                "tools": ["BigQuery", "Google Sheets / Excel"],
+                "imageUrl": "/images/certifications/analyse.png",
+                "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/9DT3GTCSW2ML",
+                "category" : "data-analysis"
+            },
             {
                 "id": "google_data_analytics_module4",
                 "title": "Process Data from Dirty to Clean",
@@ -368,7 +385,7 @@
                 "tools": ["BigQuery", "Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/process.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/JSFD4D6MKF8Y",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "google_data_analytics_module3",
@@ -380,7 +397,7 @@
                 "tools": ["BigQuery", "Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/prepare.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/GJEDLJ0BKZIB",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "google_data_analytics_module2",
@@ -392,7 +409,7 @@
                 "tools": ["Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/ask.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/EQ3CYXHFPS17",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "google_data_analytics_module1",
@@ -404,7 +421,7 @@
                 "tools": ["Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/foundation.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/DJLCOIYG373Z",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "fcc_machine_learning_python",
@@ -429,7 +446,7 @@
                 "tools": ["Python", "Jupyter Notebook", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
                 "imageUrl": "/images/certifications/freecodecampDataAnalysisWithPython.png",
                 "credentialUrl": "https://freecodecamp.org/certification/fcc-411f479b-2ea6-487d-b23d-c27abbbccff1/data-analysis-with-python-v7",
-                "category": "data-science"
+                "category": "data-analysis"
             },
 
             {
@@ -455,7 +472,7 @@
                 "tools": ["Python", "Jupyter Notebook", "Skills Network Labs"],
                 "imageUrl": "/images/certifications/dvWithPython.png",
                 "credentialUrl": "https://courses.cognitiveclass.ai/certificates/367cc863d35c4a6e85f5667f828acbaf",
-                "category": "data-science"
+                "category": "data-analysis"
             },
 
             {
@@ -468,7 +485,7 @@
                 "tools": ["Python", "Jupyter Notebook", "Skills Network Labs", "Scikit-learn"],
                 "imageUrl": "/images/certifications/IbmDA101.png",
                 "credentialUrl": "https://courses.cognitiveclass.ai/certificates/b88a0742e9e249f5ad014dcdf5182bd4",
-                "category": "data-science"
+                "category": "data-analysis"
             }
         ]
     },
