@@ -1,9 +1,9 @@
 {
     "home":{
-        "title": "Là où les chiffres racontent Le passé, je crée le futur.",
-        "subtitle": "Bonjour, je suis Abel Kouadio, Data Scientist & Software Engineer",
-        "description": "Passionné par la donnée, j'allie l'analyse descriptive d'un Data Analyst et la puissance prédictive d'un Data Scientist. J'explore, nettoie et interprète les données pour en extraire des insights, puis je conçois des modèles de machine learning capables de transformer ces informations en solutions concrètes.",
-        "goal": "Mon objectif : aider les entreprises à comprendre leur présent et anticiper leur futur.",
+        "title": "De la collecte à l’analyse : la donnée au cœur de la décision.",
+        "subtitle": "Hello, je suis Abel Bekantie Kouadio, Data Engineer & Data Analyst",
+        "description": "Passionné par la donnée, Je conçois et mets en production des pipelines data fiables, depuis la collecte (web scraping, APIs, bases de données) et les processus ETL jusqu’à l’analyse, la modélisation des données et la création de dashboards automatisés et interactifs.",
+        "goal": "Mon approche combine rigueur technique et vision métier afin de transformer des volumes de données hétérogènes en indicateurs clairs, actionnables et orientés décision",
         "cv": "Telecharger mon CV",
         "cvLink" : "/Cv/Cv_AbelBékantieKouadio.pdf",
         "contact": "Contactez moi"
@@ -20,7 +20,12 @@
         "profilname": "Profil",
         "competence": "Compétences Techniques",
         "edu" : "Formation et Éducation",
-        "profil": "Motivé et passionné par la data science et l'IA, j'ai acquis une solide expérience en informatique et électronique au cours de mes stages. J'ai développé des compétences solides en analyse de données et en développement logiciel, que je souhaite mettre au service d'une entreprise ambitieuse. Mon parcours académique m'a permis de maîtriser les concepts fondamentaux de la science des données et je suis prêt à relever de nouveaux défis. Je suis rapidement opérationnel et je suis certain de pouvoir apporter une contribution significative à votre équipe et être à la hauteur de la confiance qui me sera accordé.",
+        "profil": [
+            "Spécialisé en data science et analyse de données, je maîtrise l’ensemble de la chaîne de production data, de la collecte et la préparation des données à l’analyse, la modélisation et la valorisation des insights.",
+            "Au cours de mes expériences, j’ai travaillé sur des problématiques concrètes mêlant web scraping, bases de données, analyse exploratoire, visualisation et prise de décision produit.",
+            "Je dispose également de bases solides en développement logiciel et en machine learning, incluant la conception de modèles, leur intégration via des APIs et les premiers aspects de déploiement.",
+            "Autonome et rapidement opérationnel, je cherche à mettre mes compétences techniques et analytiques au service de projets ambitieux à fort impact métier"
+        ],
         "experienceData": [
             {
                 "title": "Stage Data Analyst / Business Analyst",
@@ -355,6 +360,18 @@
         "Verify": "Vérifier",
 
         "certifData": [
+             {
+                "id": "google_data_analytics_module5",
+                "title": "Analyze Data to Answer Questions",
+                "issuer": "GOOGLE",
+                "date": "Février 2026",
+                "description": "CCe module est consacré à l’analyse des données afin de répondre à des questions métiers. Il met en avant l’importance de l’organisation des données avant l’analyse à l’aide de tris et de filtres, aborde la conversion et le formatage des données, et introduit l’utilisation de SQL pour combiner des données issues de plusieurs tables. Il couvre également l’utilisation de fonctions dans les tableurs pour effectuer des calculs de base et produire des analyses exploitables.",
+                "skills": ["SQL", "Spreadsheet Software","Data Manipulation", "Analytics", "Excel Formulas", "Data Transformation", "Data Processing", "Pivot Tables And Charts"],
+                "tools": ["BigQuery", "Google Sheets / Excel"],
+                "imageUrl": "/images/certifications/analyse.png",
+                "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/9DT3GTCSW2ML",
+                "category": "data-analysis"
+            },
             {
                 "id": "google_data_analytics_module4",
                 "title": "Process Data from Dirty to Clean",
@@ -365,7 +382,7 @@
                 "tools": ["BigQuery", "Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/process.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/JSFD4D6MKF8Y",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "google_data_analytics_module3",
@@ -377,7 +394,7 @@
                 "tools": ["BigQuery", "Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/prepare.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/GJEDLJ0BKZIB",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "google_data_analytics_module2",
@@ -389,7 +406,7 @@
                 "tools": ["Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/ask.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/EQ3CYXHFPS17",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "google_data_analytics_module1",
@@ -401,7 +418,7 @@
                 "tools": ["Google Sheets / Excel"],
                 "imageUrl": "/images/certifications/foundation.png",
                 "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/DJLCOIYG373Z",
-                "category": "data-science"
+                "category": "data-analysis"
             },
             {
                 "id": "fcc_machine_learning_python",
@@ -426,7 +443,7 @@
                 "tools": ["Python", "Jupyter Notebook", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
                 "imageUrl": "/images/certifications/freecodecampDataAnalysisWithPython.png",
                 "credentialUrl": "https://freecodecamp.org/certification/fcc-411f479b-2ea6-487d-b23d-c27abbbccff1/data-analysis-with-python-v7",
-                "category": "data-science"
+                "category": "data-analysis"
             },
 
             {
@@ -452,7 +469,7 @@
                 "tools": ["Python", "Jupyter Notebook", "Skills Network Labs"],
                 "imageUrl": "/images/certifications/dvWithPython.png",
                 "credentialUrl": "https://courses.cognitiveclass.ai/certificates/367cc863d35c4a6e85f5667f828acbaf",
-                "category": "data-science"
+                "category": "data-analysis"
             },
 
             {
@@ -465,7 +482,7 @@
                 "tools": ["Python", "Jupyter Notebook", "Skills Network Labs", "Scikit-learn"],
                 "imageUrl": "/images/certifications/IbmDA101.png",
                 "credentialUrl": "https://courses.cognitiveclass.ai/certificates/b88a0742e9e249f5ad014dcdf5182bd4",
-                "category": "data-science"
+                "category": "data-analysis"
             }
 
         ]
