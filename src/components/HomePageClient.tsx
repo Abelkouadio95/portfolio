@@ -25,21 +25,50 @@ export default function HomePageClient() {
           </div>
 
           {/* Text Section */}
+          {/* Text Section */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start self-center text-center lg:text-left">
-            <AnimatedText text={t('title')} className="text-3xl md:text-4xl lg:text-5xl">
-            </AnimatedText>
+            <AnimatedText
+              text={t('title')}
+              className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight 
+                        bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 
+                        bg-clip-text text-transparent mb-4"
+            />
             <AnimatedSection>
-              <h2 className="text-lg md:text-xl font-bold mb-2">{t('subtitle')}</h2>
-              <p className="text-sm md:text-base font-medium">{t('description')}</p>
-              <p className="font-semibold text-red-500 mb-4 text-sm md:text-base">{t('goal')}</p>
+              <h2 className="text-base md:text-lg lg:text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">
+                {t('subtitle')}
+              </h2>
+              <p className="text-sm md:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
+                {t('description')}
+              </p>
+              <p className="font-semibold text-violet-500 dark:text-violet-400 mb-5 text-sm md:text-base lg:text-lg">
+                {t('goal')}
+              </p>
             </AnimatedSection>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 md:gap-5 mt-2 w-full">
-              <Link href={t('cvLink')} target={"_blank"} 
-              className="flex items-center bg-black text-white p-2 px-4 md:px-5 rounded-lg font-semibold hover:bg-white border-2 hover:text-black gap-2 md:gap-4 text-xs md:text-sm w-full sm:w-auto justify-center">
-                <FaDownload/> {t('cv')}
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 md:gap-5 mt-4 w-full">
+              <Link
+                href={t('cvLink')}
+                target="_blank"
+                className="flex items-center justify-center gap-2 md:gap-3 
+                          bg-gradient-to-r from-blue-600 to-violet-600 text-white 
+                          p-2 px-4 md:px-6 rounded-lg font-semibold text-xs md:text-sm 
+                          shadow-md hover:shadow-xl hover:from-blue-500 hover:to-violet-500 
+                          transition-all duration-200 w-full sm:w-auto"
+              >
+                <FaDownload /> {t('cv')}
               </Link>
-              <a href="mailto:abelkouadio195@gmail.com" target={"_blank"} className="flex items-center bg-black text-white text-xs md:text-sm p-2 px-4 md:px-5 rounded-lg font-semibold hover:bg-white border-2 hover:text-black gap-2 md:gap-4 w-full sm:w-auto justify-center"><MdEmail/>{t('contact')} </a>
+
+              <a
+                href="mailto:abelkouadio195@gmail.com"
+                target="_blank"
+                className="flex items-center justify-center gap-2 md:gap-3 
+                          bg-black text-white text-xs md:text-sm 
+                          p-2 px-4 md:px-6 rounded-lg font-semibold border border-violet-500 
+                          hover:bg-white hover:text-black hover:shadow-[0_0_15px_rgba(139,92,246,0.4)] 
+                          transition-all duration-200 w-full sm:w-auto"
+              >
+                <MdEmail /> {t('contact')}
+              </a>
             </div>
           </div>  
         </div>
