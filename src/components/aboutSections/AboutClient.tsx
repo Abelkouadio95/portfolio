@@ -42,8 +42,11 @@ export default function AboutClient() {
                                     {t('status')}
                                 </p>
                                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                                    <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
+                                        Data analysis
+                                    </span>
                                     <span className="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
-                                        Data Science
+                                        Data engineering
                                     </span>
                                     <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
                                         IA/ML
@@ -65,7 +68,7 @@ export default function AboutClient() {
                             delay={0.2}
                             icon = {<FaUser size={28} className="text-gray-700 " />}
                         >
-                            <ProfilSection profil={t('profil')} />
+                            <ProfilSection profil={t.raw('profil')} />
                         </CardContainer>
                     </AnimatedSection>
 
