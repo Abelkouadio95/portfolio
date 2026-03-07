@@ -37,7 +37,7 @@ export default function CertificationsFilter({
   const getCategoryIcon = (category: string) => {
     const icons = {
       'all': '🏆',
-      'data-science': '📊',
+      'data-analysis': '📊',
       'python':'🐍',
       'machine-learning': '🤖',
       'web-development': '🌐',
