@@ -63,7 +63,7 @@ export default function CertificationsClient() {
               onClick={() => handleCategoryChange(category)}
             >
               <div className="text-xl md:text-2xl mb-1 md:mb-2">
-                {category === 'data-science' && '📊'}
+                {category === 'data-analysis' && '📊'}
                 {category === 'python' && '🐍'}
                 {category === 'machine-learning' && '🤖'}
                 {category === 'web-development' && '🌐'}
