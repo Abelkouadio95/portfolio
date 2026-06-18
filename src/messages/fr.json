@@ -498,6 +498,33 @@
         "seeMore" : "Voir Plus",
         "projectsData": [
             {
+                "id": "ecommerce_pipeline",
+                "title": "Pipeline Data E-Commerce End-to-End",
+                "shortDescription": "Conception d'une plateforme data complète pour centraliser, transformer et analyser des données e-commerce à partir de multiples sources.",
+                "longDescription": [
+                    "Ce projet consiste à construire une architecture data moderne capable d'ingérer, stocker, transformer et exploiter des données e-commerce provenant d'APIs, de bases de données et de fichiers métiers.",
+                    "Le pipeline s'appuie sur Airflow pour l'orchestration, MinIO comme Data Lake compatible S3, DuckDB comme moteur analytique et Streamlit pour la restitution des indicateurs métiers.",
+                    "Une architecture Bronze / Silver / Gold a été mise en place afin de garantir la traçabilité, la qualité et l'exploitabilité des données. Les traitements automatisés permettent d'enrichir les données produits, commandes et taux de change avant leur exposition aux utilisateurs finaux."
+                ],
+                "imageSrc": "/images/projects/pecom.jpg",
+                "tags": [
+                    "Python","Data Engineering","Apache Airflow","DuckDB","MinIO","SQL","Docker","Streamlit","Parquet"
+                ],
+                "features": [
+                    "Ingestion automatisée de données depuis plusieurs APIs REST.",
+                    "Intégration de données historiques stockées dans SQLite.",
+                    "Centralisation des données dans un Data Lake MinIO compatible S3.",
+                    "Architecture de données Bronze, Silver et Gold.",
+                    "Transformation et enrichissement des données avec Python et SQL.",
+                    "Stockage optimisé au format Parquet.",
+                    "Chargement analytique dans DuckDB pour les requêtes métier.",
+                    "Orchestration complète des workflows avec Apache Airflow.",
+                    "Tableaux de bord interactifs développés avec Streamlit.",
+                    "Déploiement local conteneurisé avec Docker Compose."
+                ],
+                "sourceUrl": "https://github.com/Abelkouadio95/e_com_pipeline"
+            },
+            {
                 "id": "fraud_detection",
                 "title": "Détection intelligente de fraude bancaire",
                 "shortDescription": "Anticiper et prévenir les transactions frauduleuses grâce au machine learning.",
