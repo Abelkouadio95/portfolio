@@ -499,6 +499,41 @@
         "pTwo": "Once on GitHub, check the README.md file for more information.",
         "seeMore" : "See More",
         "projectsData":[
+            {
+                "id": "ecommerce_pipeline",
+                "title": "End-to-End E-Commerce Data Pipeline",
+                "shortDescription": "Design and implementation of a modern data platform to collect, transform, and analyze e-commerce data from multiple sources.",
+                "longDescription": [
+                    "This project focuses on building a complete data engineering architecture capable of ingesting, storing, transforming, and serving e-commerce data from APIs, databases, and business files.",
+                    "The platform leverages Apache Airflow for workflow orchestration, MinIO as an S3-compatible data lake, DuckDB as the analytical engine, and Streamlit for business reporting and visualization.",
+                    "A Bronze, Silver, and Gold architecture was implemented to ensure data quality, traceability, and scalability. Automated pipelines enrich product, order, and exchange rate data before making them available for analytics and decision-making."
+                ],
+                "imageSrc": "/images/projects/pecom.jpg",
+                "tags": [
+                    "Python",
+                    "Data Engineering",
+                    "Apache Airflow",
+                    "DuckDB",
+                    "MinIO",
+                    "SQL",
+                    "Docker",
+                    "Streamlit",
+                    "Parquet"
+                ],
+                "features": [
+                    "Automated ingestion from multiple REST APIs.",
+                    "Integration of historical data stored in SQLite databases.",
+                    "Centralized storage in an S3-compatible MinIO Data Lake.",
+                    "Bronze, Silver, and Gold data architecture.",
+                    "Data transformation and enrichment using Python and SQL.",
+                    "Optimized storage using the Parquet format.",
+                    "Analytical data modeling and querying with DuckDB.",
+                    "Workflow orchestration with Apache Airflow.",
+                    "Interactive business dashboards built with Streamlit.",
+                    "Containerized deployment using Docker Compose."
+                ],
+                "sourceUrl": "https://github.com/Abelkouadio95/e_com_pipeline"
+            },
             
             {
                 "id": "fraud_detection",
