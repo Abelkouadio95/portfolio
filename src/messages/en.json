@@ -1,12 +1,67 @@
 {
     "home":{
-        "title": "From data collection to analysis: data at the core of decision-making.",
-        "subtitle": "Hello, I'm Abel Kouadio, Data Scientist & Software Engineer",
-        "description": "Passionate about data, I combine the descriptive analysis of a Data Analyst with the predictive power of a Data Scientist. I explore, clean, and interpret data to extract insights, then design machine learning models capable of turning this information into concrete solutions.",
-        "goal": "My goal: helping companies understand their present and anticipate their future.",
+        "title": "Abel Bekantie Kouadio — Data Engineer & Data Analyst",
+        "subtitle": "Hello, I'm Abel Bekantie Kouadio, Data Engineer & Data Analyst",
+        "description": "I build reliable data pipelines and dashboards that turn raw data into actionable insights — from collection to decision-making.",
+        "greeting": "Hello, I'm",
+        "name": "Abel Bekantie Kouadio",
+        "role": "Data Engineer & Data Analyst",
+        "hook": "Companies collect thousands of data points every day. Few manage to turn them into reliable decisions.",
+        "intervention": "That's where I step in: reliable pipelines, actionable dashboards, and ML models ready for production.",
+        "stats": [
+            { "value": "4+", "label": "Internships & experiences" },
+            { "value": "6+", "label": "Projects delivered" },
+            { "value": "3", "label": "Industries covered" },
+            { "value": "ENSAM", "label": "Engineering degree" }
+        ],
+        "technologies": ["Python", "SQL", "Power BI", "FastAPI", "Docker", "Pandas", "NLP"],
+        "badge": {
+            "title": "Certifications",
+            "certifications": ["Google Data Analytics", "IBM Python", "ENSAM"]
+        },
+        "projectsCta": "View my projects",
         "cv": "Download my CV",
-        "cvLink" : "/Cv/Resume_AbelBékantieKouadio.pdf",
-        "contact": "Let’s connect"
+        "cvLink": "/Cv/Resume_AbelBékantieKouadio.pdf",
+        "linkedin": "LinkedIn",
+        "linkedinUrl": "https://www.linkedin.com/in/abel-bekanti%C3%A9-kouadio-50333527b/",
+        "challenges": {
+            "label": "WHAT I SOLVE",
+            "title": "Data challenges I know how to tackle",
+            "subtitle": "Do 2 or 3 of these sound familiar? We probably have something to discuss.",
+            "items": [
+                "Scattered data that's hard to centralize and trust.",
+                "Manual, fragile pipelines with slow or unstable refreshes.",
+                "Unreadable dashboards, poorly defined or inconsistent KPIs across reports.",
+                "ML models built in notebooks but never deployed to production.",
+                "Business teams without quick access to insights for decision-making."
+            ],
+            "punchline": "If you check 2–3 boxes, let's explore what I can bring.",
+            "cta": "Discover my projects"
+        },
+        "featuredProjects": {
+            "label": "PORTFOLIO",
+            "title": "Featured projects",
+            "subtitle": "Concrete deliverables — from data collection to production-ready solutions.",
+            "viewAll": "View all projects",
+            "viewProject": "View project",
+            "items": [
+                {
+                    "id": "ecommerce_pipeline",
+                    "category": "Data Engineering",
+                    "impact": "Bronze / Silver / Gold architecture orchestrated with Airflow — from multi-source ingestion to Streamlit dashboards."
+                },
+                {
+                    "id": "fraud_detection",
+                    "category": "Machine Learning",
+                    "impact": "XGBoost & Random Forest models deployed via FastAPI for real-time fraud detection."
+                },
+                {
+                    "id": "pfe",
+                    "category": "AI & Full Stack",
+                    "impact": "OCR + NLP (SpaCy) for automatic CV extraction and intelligent profile / mission matching."
+                }
+            ]
+        }
     },
     "nav":{
 
@@ -363,6 +418,57 @@
         "Verify": "Verify",
 
         "certifData": [
+            {
+                "id": "google_data_analytics_professional_certificate",
+                "title": "Google Data Analytics Professional Certificate",
+                "issuer": "GOOGLE",
+                "date": "March 2026",
+                "description": "This professional certification covers the complete data analytics lifecycle, from defining business problems to delivering actionable insights. Through nine hands-on courses and real-world projects, it develops practical skills in data collection, cleaning, transformation, SQL querying, exploratory data analysis, data visualization, and data storytelling using industry-standard tools such as BigQuery, R, Tableau, and spreadsheets.",
+                "skills": [
+                    "Data Analytics",
+                    "Data Cleaning",
+                    "SQL",
+                    "R Programming",
+                    "Exploratory Data Analysis",
+                    "Data Visualization",
+                    "Business Intelligence",
+                    "Data Storytelling",
+                    "Data-Driven Decision Making",
+                    "Statistical Analysis"
+                ],
+                "tools": [
+                    "BigQuery",
+                    "SQL",
+                    "R",
+                    "Tableau",
+                    "Google Sheets",
+                    "Microsoft Excel"
+                ],
+                "imageUrl": "/images/certifications/gdapc.png",
+                "credentialUrl": "https://www.coursera.org/account/accomplishments/professional-cert/certificate/R1V8XZUS24IP",
+                "category": "data-analysis"
+            },
+            {
+                "id": "ef-set-english-certificate",
+                "title": "EF SET English Certificate (C1 Advanced)",
+                "issuer": "EF Standard English Test",
+                "date": "March 2026",
+                "description": "This certification validates an advanced (CEFR C1) level of English proficiency, assessing reading, listening, writing, and speaking skills through a standardized online test. It demonstrates the ability to communicate effectively in professional and academic environments, understand complex technical documentation, and collaborate in international teams.",
+                "skills": [
+                    "English Proficiency (C1)",
+                    "Technical English",
+                    "Professional Communication",
+                    "Academic English",
+                    "Reading Comprehension",
+                    "Writing",
+                    "Listening",
+                    "Speaking"
+                ],
+                "tools": [],
+                "imageUrl": "/images/certifications/efset.png",
+                "credentialUrl": "https://cert.efset.org/oBNM4D", 
+                "category": "language"
+            },
              {
                 "id": "google_data_analytics_module5",
                 "title": "Analyze Data to Answer Questions",
