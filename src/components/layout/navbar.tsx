@@ -54,7 +54,7 @@ export function Navbar() {
 
       {/* Desktop Social Links */}
       <nav className="hidden md:flex items-center justify-center flex-wrap">
-        <motion.a href="https://www.linkedin.com/in/abel-kouadio-50333527b/" 
+        <motion.a href="https://www.linkedin.com/in/abel-bekanti%C3%A9-kouadio-50333527b/" 
         target={"_blank"}
         className="w-5 mr-3"
         whileHover={{y:-2}}

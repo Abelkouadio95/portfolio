@@ -522,6 +522,7 @@
                     "Tableaux de bord interactifs développés avec Streamlit.",
                     "Déploiement local conteneurisé avec Docker Compose."
                 ],
+                "demoUrl": "https://youtu.be/c5ZMGYVpDBI",
                 "sourceUrl": "https://github.com/Abelkouadio95/e_com_pipeline"
             },
             {
