@@ -64,7 +64,26 @@ export default function ContactClient() {
   ];
 
   return (
-    <Layout>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Background */}
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-slate-50 via-blue-50/40 to-slate-100/80 dark:from-slate-950 dark:via-blue-950/20 dark:to-slate-950"
+        aria-hidden
+      />
+      <div
+        className="absolute top-0 right-0 w-[min(520px,80vw)] h-[min(520px,80vw)] rounded-full bg-blue-400/10 dark:bg-blue-500/5 blur-3xl -translate-y-1/3 translate-x-1/4"
+        aria-hidden
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[min(400px,70vw)] h-[min(400px,70vw)] rounded-full bg-slate-400/10 dark:bg-slate-500/5 blur-3xl translate-y-1/3 -translate-x-1/4"
+        aria-hidden
+      />
+      <div
+        className="absolute inset-0 opacity-[0.35] dark:opacity-[0.15] bg-[radial-gradient(circle_at_1px_1px,rgb(148_163_184/0.35)_1px,transparent_0)] bg-[length:28px_28px]"
+        aria-hidden
+      />
+
+      <Layout className="relative z-10 bg-transparent">
       <div className="w-full max-w-5xl mx-auto pt-12 md:pt-20 pb-20">
         {/* Header */}
         <motion.div
@@ -93,7 +112,7 @@ export default function ContactClient() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="lg:col-span-3"
           >
-            <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm p-6 md:p-8">
+            <div className="bg-white/80 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl border border-slate-200/80 dark:border-slate-700 shadow-sm shadow-slate-200/50 dark:shadow-none p-6 md:p-8">
               <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
                 {t('form.title')}
               </h2>
@@ -181,7 +200,7 @@ export default function ContactClient() {
                   href={link.href}
                   target={link.external ? '_blank' : undefined}
                   rel={link.external ? 'noopener noreferrer' : undefined}
-                  className={`flex items-center gap-4 p-4 md:p-5 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm ${link.hoverBorder} hover:shadow-md transition-all duration-300 group`}
+                  className={`flex items-center gap-4 p-4 md:p-5 bg-white/80 dark:bg-slate-800/90 backdrop-blur-sm rounded-xl border border-slate-200/80 dark:border-slate-700 shadow-sm shadow-slate-200/40 dark:shadow-none ${link.hoverBorder} hover:shadow-md transition-all duration-300 group`}
                 >
                   <div className={`flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-xl ${link.iconBg} group-hover:scale-105 transition-transform`}>
                     {link.icon}
@@ -199,7 +218,7 @@ export default function ContactClient() {
             </div>
 
             {/* Info card */}
-            <div className="mt-6 p-5 rounded-xl bg-slate-900 dark:bg-slate-800 border border-slate-800 dark:border-slate-700">
+            <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-900 border border-slate-700/50 shadow-lg shadow-slate-900/10">
               <p className="text-sm font-semibold text-white mb-1">Data Engineer & Data Analyst</p>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {t('subtitle')}
@@ -208,6 +227,7 @@ export default function ContactClient() {
           </motion.div>
         </div>
       </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 }
