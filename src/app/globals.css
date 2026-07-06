@@ -25,3 +25,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes trust-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.trust-marquee-scroll {
+  display: flex;
+  width: max-content;
+  animation: trust-marquee-scroll 28s linear infinite;
+}
+
+.trust-marquee-scroll:hover {
+  animation-play-state: paused;
+}
+
