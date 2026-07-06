@@ -61,9 +61,7 @@ export default function FinalCta({
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 w-full sm:w-auto"
             >
-              <span className="w-4 h-4"><LinkedInIcon /></span>
               {linkedin}
-              <LinkArrow className="w-3 h-3" />
             </a>
           </div>
         </div>
