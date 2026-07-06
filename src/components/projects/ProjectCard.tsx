@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaGithub, FaInfoCircle } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaBookOpen } from "react-icons/fa";
 import type { Project } from "@/types/portfolioTypes";
 import { useTranslations } from "next-intl";
 
@@ -12,51 +12,64 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, onVoirPlus }: ProjectCardProps) {
   const t = useTranslations('projects');
+  const hasCaseStudy = !!project.caseStudy;
+
   return (
     <motion.div
-      whileHover={{ scale: 1.02, boxShadow: '0 0 20px rgba(156, 116, 250, 0.32)' }}
-      transition={{ duration: 0.05, ease: "easeOut" }}
-      className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all overflow-hidden hover:border-violet-500 "
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.15, ease: "easeOut" }}
+      className="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-all overflow-hidden hover:border-blue-300 dark:hover:border-blue-700"
     >
       <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={project.imageSrc}
           alt={project.title}
           fill
-          className="object-cover p-6 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
+          className="object-cover p-6 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 ring-1 ring-inset ring-gray-100/50 dark:ring-gray-700/50 rounded-xl pointer-events-none"></div>
+        {hasCaseStudy && (
+          <span className="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-1 text-[10px] font-bold uppercase tracking-wide bg-blue-600 text-white rounded-md shadow-sm">
+            <FaBookOpen className="text-[9px]" />
+            {t('caseStudy')}
+          </span>
+        )}
       </div>
-      <div className=" pt-0 p-5">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">
+
+      <div className="p-5">
+        <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-1">
           {project.title}
         </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 mb-4">
+        <p className="text-sm text-slate-600 dark:text-slate-300 line-clamp-2 mb-4">
           {project.shortDescription}
         </p>
         <div className="flex flex-wrap gap-2 mb-4">
-          {project.tags?.slice(0, 4).map((tag, i) => (
-            <span key={i} className="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-black dark:text-gray-200 border border-gray-400">
+          {project.tags?.slice(0, 4).map((tag) => (
+            <span key={tag} className="text-xs px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600">
               {tag}
             </span>
           ))}
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={() => onVoirPlus(project)}
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-purple-600 text-white hover:bg-purple-700 transition"
+            className={`inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-white transition ${
+              hasCaseStudy
+                ? 'bg-blue-600 hover:bg-blue-700'
+                : 'bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600'
+            }`}
           >
-            <FaInfoCircle /> {t('seeMore')}
+            <FaBookOpen className="text-xs" />
+            {hasCaseStudy ? t('caseStudyBtn') : t('seeMore')}
           </button>
           {project.demoUrl && (
             <a
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition"
+              className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-blue-400 hover:text-blue-600 transition"
             >
-              <FaExternalLinkAlt /> Demo
+              <FaExternalLinkAlt className="text-xs" /> Demo
             </a>
           )}
           {project.sourceUrl && (
@@ -64,9 +77,9 @@ export default function ProjectCard({ project, onVoirPlus }: ProjectCardProps) {
               href={project.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium bg-gray-900 text-white hover:bg-black transition"
+              className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-blue-400 hover:text-blue-600 transition"
             >
-              <FaGithub /> Code
+              <FaGithub className="text-xs" /> Code
             </a>
           )}
         </div>

@@ -51,7 +51,7 @@ export default function CertificationCard({ certification }: CertificationCardPr
         whileHover={{
         scale: 1.02, boxShadow: '0 0 20px rgba(156, 116, 250, 0.32)'}}
         transition={{ duration: 0.03, ease: 'easeOut' }}
-        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-violet-500 group"
+        className="bg-white dark:bg-gray-800 rounded-xl duration-300 overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-all overflow-hidden hover:border-blue-300 dark:hover:border-blue-700 group"
       >
 
         { /* Header avec icône de catégorie */}

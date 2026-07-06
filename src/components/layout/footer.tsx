@@ -15,36 +15,34 @@ export const Footer: FC = ()=> {
     const tr = useTranslations('nav');
 
     return(
-        <footer className="w-full border-t-1 border-solid border-black font-medium text-lg">
+        <footer className="w-full border-t border-slate-200 dark:border-slate-800 font-medium text-lg">
             <Layout>
                 <div className="py-7 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0">
-                    {/* Brand Section */}
                     <div className="text-center lg:text-left">
                         <p className="font-bold text-lg">KOUADIO ABEL BEKANTIE</p>
-                        <span className="text-sm">{new Date().getFullYear()} &copy; All Rights Reserved.</span>
+                        <span className="text-sm text-slate-500">{new Date().getFullYear()} &copy; All Rights Reserved.</span>
                     </div>
                     
-                    {/* Quick Links Section */}
                     <div className="text-center lg:text-left">
-                        <p className="font-bold text-lg mb-2">{t('quickLinks')} </p>
-                        <div className="flex flex-wrap justify-center lg:justify-start gap-2 lg:space-x-3 text-sm underline underline-offset-3">
-                            <Link href={`/${locale}${'/'}`} className="hover:text-blue-500" >{tr('home')} </Link>
-                            <Link href={`/${locale}${'/about'}`} className="hover:text-blue-500"> {tr('about')} </Link>
-                            <Link href={`/${locale}${'/projects'}`} className="hover:text-blue-500">{tr('projects')} </Link>
-                            <Link href={`/${locale}${'/certifications'}`} className="hover:text-blue-500"> Certifications</Link>
+                        <p className="font-bold text-lg mb-2">{t('quickLinks')}</p>
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-2 lg:gap-x-3 text-sm underline underline-offset-3">
+                            <Link href={`/${locale}/`} className="hover:text-blue-500">{tr('home')}</Link>
+                            <Link href={`/${locale}/about`} className="hover:text-blue-500">{tr('about')}</Link>
+                            <Link href={`/${locale}/projects`} className="hover:text-blue-500">{tr('projects')}</Link>
+                            <Link href={`/${locale}/certifications`} className="hover:text-blue-500">{tr('certifications')}</Link>
+                            <Link href={`/${locale}/contact`} className="hover:text-blue-500">{tr('contact')}</Link>
                         </div>
                     </div>
                     
-                    {/* Contact Section */}
                     <div className="text-center lg:text-left">
-                        <p className="font-bold text-lg mb-2">Contacts</p>
+                        <p className="font-bold text-lg mb-2">{t('contacts')}</p>
                         <div className="space-y-2">
-                            <a href="mailto:abelkouadio195@gmail.com" target={"_blank"} className="flex items-center justify-center lg:justify-start hover:text-blue-500 gap-3 text-sm">
-                                <MdEmail size={20} color="#1f2937" /> 
+                            <a href="mailto:abelkouadio195@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center lg:justify-start hover:text-blue-500 gap-3 text-sm">
+                                <MdEmail size={20} /> 
                                 <span className="hidden sm:inline">abelkouadio195@gmail.com</span>
                                 <span className="sm:hidden">Email</span>
                             </a>
-                            <a href="https://wa.me/212694996559" target={"_blank"} className="text-base flex items-center justify-center lg:justify-start gap-3 hover:text-green-500">
+                            <a href="https://wa.me/212694996559" target="_blank" rel="noopener noreferrer" className="text-base flex items-center justify-center lg:justify-start gap-3 hover:text-green-500">
                                 <FaWhatsapp size={20} color="#25d366" /> 
                                 <span className="hidden sm:inline">+212 6 94 99 65 59</span>
                                 <span className="sm:hidden">WhatsApp</span>
@@ -54,6 +52,5 @@ export const Footer: FC = ()=> {
                 </div>
             </Layout>
         </footer>
-
     )
 }

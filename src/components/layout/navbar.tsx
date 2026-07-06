@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import LanguageSwitcher from "../LanguageSwitcher";
 import { useTranslations } from 'next-intl';
 
+const LINKEDIN_URL = "https://www.linkedin.com/in/abel-bekanti%C3%A9-kouadio-50333527b/";
+
 type CustomLinkProps = {
   href: string;
   title: string;
@@ -44,23 +46,24 @@ export function Navbar() {
         <Link href="/" className="text-black dark:text-white">ABEL KOUADIO</Link>
       </div>
 
-      {/* Desktop Navigation */}
-      <nav className="hidden md:flex gap-10">
+      <nav className="hidden md:flex gap-8">
         <CustomLink href="/" title={t('home')} />
         <CustomLink href="/about" title={t('about')} />
-        <CustomLink href="/certifications" title="Certifications" />
         <CustomLink href="/projects" title={t('projects')} />
+        <CustomLink href="/certifications" title={t('certifications')} />
+        <CustomLink href="/contact" title={t('contact')} />
       </nav>
 
-      {/* Desktop Social Links */}
       <nav className="hidden md:flex items-center justify-center flex-wrap">
-        <motion.a href="https://www.linkedin.com/in/abel-bekanti%C3%A9-kouadio-50333527b/" 
+        <motion.a href={LINKEDIN_URL}
         target={"_blank"}
+        rel="noopener noreferrer"
         className="w-5 mr-3"
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}> <LinkedInIcon/></motion.a>
         <motion.a href="https://github.com/Abelkouadio95"
         target="_blank"
+        rel="noopener noreferrer"
         className="w-6 ml-3"
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}><GithubIcon/></motion.a>
@@ -69,7 +72,6 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu Button */}
       <button
         className="md:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -80,7 +82,6 @@ export function Navbar() {
         <span className={`w-6 h-0.5 bg-black dark:bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
       </button>
 
-      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -91,18 +92,20 @@ export function Navbar() {
           <nav className="flex flex-col p-4 space-y-4">
             <CustomLink href="/" title={t('home')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
             <CustomLink href="/about" title={t('about')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
-            <CustomLink href="/certifications" title="Certifications" className="text-lg" onClick={() => setIsMenuOpen(false)} />
             <CustomLink href="/projects" title={t('projects')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
+            <CustomLink href="/certifications" title={t('certifications')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
+            <CustomLink href="/contact" title={t('contact')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
             
-            {/* Mobile Social Links */}
             <div className="flex items-center justify-center space-x-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-              <motion.a href="https://www.linkedin.com/in/abel-kouadio-50333527b/" 
+              <motion.a href={LINKEDIN_URL}
               target={"_blank"}
+              rel="noopener noreferrer"
               className="w-6"
               whileHover={{y:-2}}
               whileTap={{scale:0.9}}> <LinkedInIcon/></motion.a>
               <motion.a href="https://github.com/Abelkouadio95"
               target="_blank"
+              rel="noopener noreferrer"
               className="w-6"
               whileHover={{y:-2}}
               whileTap={{scale:0.9}}><GithubIcon/></motion.a>

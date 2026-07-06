@@ -7,7 +7,7 @@ import SkillsSection from "@/components/aboutSections/SkillsSection";
 import EducationSection from "@/components/aboutSections/EducationSection";
 import Image from "next/image";
 import Layout from "@/components/layout/layout";
-import me1 from "../../../public/images/profiles/me1.jpeg";
+import me from "../../../public/images/profiles/meee.png";
 import ProfilSection from "@/components/aboutSections/ProfilSection";
 import { FaBriefcase } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
@@ -17,6 +17,13 @@ import { useTranslations } from 'next-intl';
 
 export default function AboutClient() {
     const t = useTranslations('about');
+    const skillTags = t.raw('skillTags') as string[];
+    const tagColors = [
+        'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200',
+        'bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200',
+        'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200',
+        'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200',
+    ];
     
     return(
         <>
@@ -28,7 +35,7 @@ export default function AboutClient() {
                                 <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-yellow-400/40 via-purple-500/40 to-blue-500/40 blur-2xl opacity-60 group-hover:opacity-80 transition-opacity"></div>
                                 <div className="relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-purple-400/30 dark:ring-purple-500/30 shadow-2xl shadow-purple-500/10">
                                     <Image 
-                                    src={me1} 
+                                    src={me} 
                                     alt="Photo de profil" 
                                     fill
                                     className="object-cover object-bottom"
@@ -42,19 +49,11 @@ export default function AboutClient() {
                                     {t('status')}
                                 </p>
                                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                                    <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
-                                        Data analysis
-                                    </span>
-                                    <span className="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
-                                        Data engineering
-                                    </span>
-                                    <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
-                                        IA/ML
-                                    </span>
-                                    <span className="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium">
-                                        Full Stack
-                                    </span>
-                                    
+                                    {skillTags.map((tag, i) => (
+                                        <span key={tag} className={`${tagColors[i % tagColors.length]} px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium`}>
+                                            {tag}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         </div>

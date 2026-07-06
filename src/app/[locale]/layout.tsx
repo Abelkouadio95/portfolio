@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
+import JsonLd from '@/components/seo/JsonLd';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
@@ -33,6 +34,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={montserrat.className}>
+        <JsonLd locale={locale} />
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>{children}</main>

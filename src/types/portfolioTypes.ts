@@ -35,6 +35,13 @@ export interface Education {
   relevantCourses?: string[];
 }
 
+export interface CaseStudy {
+  context: string;
+  problem: string;
+  solution: string;
+  results: string[];
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -45,6 +52,8 @@ export interface Project {
   features?: string[];
   demoUrl?: string;
   sourceUrl?: string;
+  category?: string;
+  caseStudy?: CaseStudy;
 }
 
 export interface Certification {

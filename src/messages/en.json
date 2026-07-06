@@ -1,11 +1,11 @@
 {
     "home":{
-        "title": "Abel Bekantie Kouadio — Data Engineer & Data Analyst",
-        "subtitle": "Hello, I'm Abel Bekantie Kouadio, Data Engineer & Data Analyst",
+        "title": "Abel Bekantié Kouadio — Data Engineer & Data Analyst",
+        "subtitle": "Hello, I'm Abel Bekantié Kouadio, Data Engineer & Data Analyst",
         "description": "I build reliable data pipelines and dashboards that turn raw data into actionable insights — from collection to decision-making.",
         "greeting": "Hello, I'm",
-        "name": "Abel Bekantie Kouadio",
-        "role": "Data Engineer & Data Analyst",
+        "name": "Abel Bekantié Kouadio",
+        "role": "Data Engineer & Analyst",
         "hook": "Companies collect thousands of data points every day. Few manage to turn them into reliable decisions.",
         "intervention": "That's where I step in: reliable pipelines, actionable dashboards, and ML models ready for production.",
         "stats": [
@@ -61,6 +61,67 @@
                     "impact": "OCR + NLP (SpaCy) for automatic CV extraction and intelligent profile / mission matching."
                 }
             ]
+        },
+        "trust": {
+            "label": "EXPERIENCE",
+            "title": "They trusted me",
+            "subtitle": "Companies and organizations where I made a concrete impact.",
+            "items": [
+                { "name": "AGH Data Agency" },
+                { "name": "ATLECS" },
+                { "name": "Quanta EDGE" },
+                { "name": "SMSD" },
+                { "name": "ENSAM" }
+            ]
+        },
+        "finalCta": {
+            "title": "Looking for an operational Data Engineer / Analyst?",
+            "subtitle": "Let's discuss your data context and what I can bring to your team.",
+            "projectsCta": "View my projects",
+            "cv": "Download my CV",
+            "linkedin": "LinkedIn"
+        },
+        "timeline": {
+            "label": "CAREER",
+            "title": "My experience at a glance",
+            "subtitle": "A data-focused journey — from business analysis to engineering and AI.",
+            "viewAll": "View full career path"
+        },
+        "certificationsHighlight": {
+            "label": "CERTIFICATIONS",
+            "title": "Verified skills",
+            "subtitle": "Professional certifications in data analytics, machine learning, Python, and languages.",
+            "count": "12+",
+            "viewAll": "View all certifications",
+            "ids": [
+                "google_data_analytics_professional_certificate",
+                "ef-set-english-certificate",
+                "fcc_machine_learning_python",
+                "python101"
+            ]
+        },
+        "workMethod": {
+            "label": "APPROACH",
+            "title": "How I work",
+            "subtitle": "A structured, results-driven approach grounded in business understanding.",
+            "steps": [
+                {
+                    "title": "Understand the business need",
+                    "description": "Identify the real challenges, expected KPIs, and decisions to support before writing any code."
+                },
+                {
+                    "title": "Audit existing data",
+                    "description": "Assess data quality, availability, and reliability to build on solid foundations."
+                },
+                {
+                    "title": "Build & industrialize",
+                    "description": "Develop robust, maintainable pipelines, models, or dashboards ready for production."
+                },
+                {
+                    "title": "Deliver actionable insights",
+                    "description": "Turn data into clear indicators that business teams can use immediately."
+                }
+            ]
         }
     },
     "nav":{
@@ -68,6 +129,8 @@
       "home": "Home",
       "about": "About",
       "projects": "Projects",
+      "certifications": "Certifications",
+      "contact": "Contact",
       "articles": "Articles"
     },
     "about":{
@@ -77,6 +140,12 @@
       "profilname": "About me",
       "competence": "Technical Skills",
       "edu": "Education",
+      "skillTags": [
+        "Data analysis",
+        "Data engineering",
+        "AI / ML",
+        "Full Stack"
+      ],
       "profil":[
             "Specialized in data science and data analytics, I have a strong command of the end-to-end data pipeline, from data collection and preparation to analysis, modeling, and insight generation.",
             "Through my professional experiences, I have worked on real-world projects involving web scraping, databases, exploratory data analysis, visualization, and data-driven product decision-making.",
@@ -604,9 +673,26 @@
         "pOne": "Click on the source code to view the files related to the project.",
         "pTwo": "Once on GitHub, check the README.md file for more information.",
         "seeMore" : "See More",
+        "caseStudy": "Case study",
+        "caseStudyBtn": "View case study",
+        "context": "Context",
+        "problem": "Problem",
+        "solution": "Solution",
+        "results": "Results",
+        "demo": "View demo",
+        "sourceCode": "Source code",
+        "filterAll": "All",
+        "filterDataEngineering": "Data Engineering",
+        "filterMachineLearning": "Machine Learning",
+        "filterAiFullStack": "AI & Full Stack",
+        "filterBusinessIntelligence": "Business Intelligence",
+        "filterFullStack": "Full Stack",
+        "filterDataAnalysis": "Data Analysis",
+        "noResults": "No projects in this category.",
         "projectsData":[
             {
                 "id": "ecommerce_pipeline",
+                "category": "dataEngineering",
                 "title": "End-to-End E-Commerce Data Pipeline",
                 "shortDescription": "Design and implementation of a modern data platform to collect, transform, and analyze e-commerce data from multiple sources.",
                 "longDescription": [
@@ -638,11 +724,24 @@
                     "Interactive business dashboards built with Streamlit.",
                     "Containerized deployment using Docker Compose."
                 ],
-                "sourceUrl": "https://github.com/Abelkouadio95/e_com_pipeline"
+                "demoUrl": "https://youtu.be/UTr3cju32es?si=hVGUT5Hhr00udXnb",
+                "sourceUrl": "https://github.com/Abelkouadio95/e_com_pipeline",
+                "caseStudy": {
+                    "context": "E-commerce data scattered across REST APIs, SQLite databases, and business files, with no unified view for analysis and decision-making.",
+                    "problem": "No reliable automated pipeline: manual reporting, non-centralized data, architecture unable to scale with growing volume.",
+                    "solution": "Bronze / Silver / Gold architecture orchestrated with Airflow, MinIO Data Lake, Python/SQL transformations, and analytical exposure via DuckDB and Streamlit.",
+                    "results": [
+                        "End-to-end pipeline orchestrated and containerized with Docker Compose",
+                        "Product, order, and exchange rate data automatically enriched",
+                        "Interactive Streamlit dashboard for business KPIs",
+                        "Parquet storage optimized for fast analytical queries"
+                    ]
+                }
             },
             
             {
                 "id": "fraud_detection",
+                "category": "machineLearning",
                 "title": "Intelligent Bank Fraud Detection",
                 "shortDescription": "Anticipate and prevent fraudulent transactions using machine learning.",
                 "longDescription": [
@@ -665,6 +764,7 @@
 
             {
                 "id": "pfe",
+                "category": "aiFullStack",
                 "title": "Intelligent CV Processing and Analysis System",
                 "shortDescription": "Profile/mission matching using NLP and information extraction.",
                 "longDescription": [
@@ -682,11 +782,23 @@
                     "Search and filtering engine for CVs and candidates",
                     "Interactive dashboard displaying key HR KPIs"
                 ],
-                "sourceUrl": "https://github.com/Abelkouadio95/Cv_analyzer_pfe_project"
+                "sourceUrl": "https://github.com/Abelkouadio95/Cv_analyzer_pfe_project",
+                "caseStudy": {
+                    "context": "ATLECS internship — HR teams managed heterogeneous CVs (PDFs, scans) with time-consuming and unreliable manual data entry.",
+                    "problem": "Manual information extraction, frequent input errors, slow profile/mission matching that was hard to scale.",
+                    "solution": "System combining OCR to digitize CVs, NLP (SpaCy) to structure data, multi-criteria matching, and a real-time HR dashboard with Spring Boot.",
+                    "results": [
+                        "Significant reduction in manual entry through automated OCR",
+                        "Smart extraction of skills, experience, and education via NLP",
+                        "Real-time HR KPI dashboard for candidate tracking",
+                        "Weighted profile / mission matching to speed up pre-selection"
+                    ]
+                }
                 },
 
                 {
                 "id": "ml-credit-scoring",
+                "category": "machineLearning",
                 "title": "Credit Scoring ML",
                 "shortDescription": "Credit scoring model with a complete ML pipeline and FastAPI deployment.",
                 "longDescription": [
@@ -708,6 +820,7 @@
 
                 {
                 "id": "portfolio-next",
+                "category": "fullStack",
                 "title": "This Portfolio!",
                 "shortDescription": "Modern portfolio with Framer Motion animations and Tailwind CSS.",
                 "longDescription": [
@@ -729,6 +842,7 @@
 
                 {
                 "id": "immobilier",
+                "category": "machineLearning",
                 "title": "Applied Data Science in Real Estate",
                 "shortDescription": "Development of a Machine Learning model to predict house prices based on their characteristics (size, location, number of rooms, etc.)",
                 "longDescription": [
@@ -744,6 +858,7 @@
 
                 {
                 "id": "AnalysisPython",
+                "category": "dataAnalysis",
                 "title": "Python Data Analysis Projects",
                 "shortDescription": "Collection of data analysis projects carried out with Python and Pandas",
                 "longDescription": [
@@ -758,6 +873,7 @@
 
                 {
                 "id": "AnalysisPowerBi",
+                "category": "businessIntelligence",
                 "title": "Power BI Dashboards",
                 "shortDescription": "Collection of interactive dashboards created with Power BI",
                 "longDescription": [
@@ -774,6 +890,33 @@
     },
 
     "footer":{
-        "quickLinks": "Quick Links"
+        "quickLinks": "Quick Links",
+        "contacts": "Contact"
+    },
+
+    "contact": {
+        "label": "CONTACT",
+        "title": "Let's discuss your data project",
+        "subtitle": "Hiring a Data Engineer / Analyst or have a concrete data need? Get in touch.",
+        "directContact": "Or reach me directly",
+        "emailLabel": "Email",
+        "whatsappLabel": "WhatsApp",
+        "linkedinLabel": "LinkedIn",
+        "responseTime": "I typically respond within 48 hours.",
+        "form": {
+            "title": "Send me a message",
+            "name": "Full name",
+            "email": "Email address",
+            "type": "Request type",
+            "subject": "Subject",
+            "message": "Your message",
+            "send": "Send message",
+            "success": "Your mail client is opening — just hit send.",
+            "types": {
+                "job": "Full-time opportunity",
+                "mission": "Contract / Freelance",
+                "other": "Other"
+            }
+        }
     }
 }

@@ -1,27 +1,27 @@
 {
     "home":{
-        "title": "Abel Bekantie Kouadio — Data Engineer & Data Analyst",
-        "subtitle": "Hello, je suis Abel Bekantie Kouadio, Data Engineer & Data Analyst",
+        "title": "Abel Bekantié Kouadio — Data Engineer & Data Analyst",
+        "subtitle": "Hello, je suis Abel Bekantié Kouadio, Data Engineer & Data Analyst",
         "description": "Je conçois des pipelines data et des dashboards qui transforment des données brutes en indicateurs fiables — de la collecte jusqu'à la décision.",
         "greeting": "Hello, je suis",
-        "name": "Abel Bekantie Kouadio",
-        "role": "Data Engineer & Data Analyst",
+        "name": "Abel Bekantié Kouadio",
+        "role": "Data Engineer & Analyst",
         "hook": "Les entreprises collectent chaque jour des milliers de données. Peu parviennent réellement à les transformer en décisions fiables.",
         "intervention": "C'est précisément là que j'interviens : pipelines fiables, dashboards actionnables et modèles ML prêts pour la production.",
         "stats": [
             { "value": "4+", "label": "Stages & expériences" },
             { "value": "6+", "label": "Projets réalisés" },
             { "value": "3", "label": "Secteurs couverts" },
-            { "value": "ENSAM", "label": "Ingénieur diplômé" }
+            { "value": "ENSAM Rabat", "label": "Ingénieur d'État" }
         ],
         "technologies": ["Python", "SQL", "Power BI", "FastAPI", "Docker", "Pandas", "NLP"],
         "badge": {
             "title": "Certifications",
-            "certifications": ["Google Data Analytics", "IBM Python", "ENSAM"]
+            "certifications": ["Google Data Analytics", "IBM Python"]
         },
         "projectsCta": "Voir mes projets",
         "cv": "Télécharger mon CV",
-        "cvLink": "/Cv/Cv_Abel_Békantie_Kouadio.pdf",
+        "cvLink": "/Cv/Cv_AbelKouadio.pdf",
         "linkedin": "LinkedIn",
         "linkedinUrl": "https://www.linkedin.com/in/abel-bekanti%C3%A9-kouadio-50333527b/",
         "challenges": {
@@ -61,12 +61,75 @@
                     "impact": "OCR + NLP (SpaCy) pour l'extraction automatique de CV et le matching intelligent profil / mission."
                 }
             ]
+        },
+        "trust": {
+            "label": "EXPÉRIENCES",
+            "title": "Ils m'ont fait confiance",
+            "subtitle": "Entreprises et organisations où j'ai contribué concrètement.",
+            "items": [
+                { "name": "AGH Data Agency" },
+                { "name": "ATLECS" },
+                { "name": "Quanta EDGE" },
+                { "name": "SMSD" },
+                { "name": "ENSAM" }
+            ]
+        },
+        "finalCta": {
+            "title": "Vous cherchez un Data Engineer / Analyst opérationnel ?",
+            "subtitle": "Discutons de votre contexte data et de ce que je peux apporter à votre équipe.",
+            "projectsCta": "Voir mes projets",
+            "cv": "Télécharger mon CV",
+            "linkedin": "LinkedIn"
+        },
+        "timeline": {
+            "label": "PARCOURS",
+            "title": "Mon expérience en bref",
+            "subtitle": "Une trajectoire orientée data, de l'analyse métier à l'ingénierie et l'IA.",
+            "viewAll": "Voir le parcours complet"
+        },
+        "certificationsHighlight": {
+            "label": "CERTIFICATIONS",
+            "title": "Compétences validées",
+            "subtitle": "Formations certifiantes en data analytics, machine learning, Python et langues.",
+            "count": "12+",
+            "viewAll": "Voir toutes les certifications",
+            "ids": [
+                "google_data_analytics_professional_certificate",
+                "ef-set-english-certificate",
+                "fcc_machine_learning_python",
+                "python101"
+            ]
+        },
+        "workMethod": {
+            "label": "MÉTHODE",
+            "title": "Comment je travaille",
+            "subtitle": "Une approche structurée, orientée résultats et compréhension métier.",
+            "steps": [
+                {
+                    "title": "Comprendre le besoin métier",
+                    "description": "Identifier les vrais enjeux, les KPI attendus et les décisions à soutenir avant toute ligne de code."
+                },
+                {
+                    "title": "Auditer les données existantes",
+                    "description": "Évaluer la qualité, la disponibilité et la fiabilité des sources pour poser des bases solides."
+                },
+                {
+                    "title": "Construire & industrialiser",
+                    "description": "Développer des pipelines, modèles ou dashboards robustes, maintenables et prêts pour la production."
+                },
+                {
+                    "title": "Livrer des indicateurs actionnables",
+                    "description": "Transformer les données en insights clairs que les équipes métier peuvent utiliser immédiatement."
+                }
+            ]
         }
     },
     "nav":{
         "home": "Accueil",
         "about": "A propos",
         "projects": "Projets",
+        "certifications": "Certifications",
+        "contact": "Contact",
         "articles": "Articles"
     },
     "about":{
@@ -75,6 +138,12 @@
         "profilname": "Profil",
         "competence": "Compétences Techniques",
         "edu" : "Formation et Éducation",
+        "skillTags": [
+            "Analyse de données",
+            "Data engineering",
+            "IA / ML",
+            "Full Stack"
+        ],
         "profil": [
             "Spécialisé en data science et analyse de données, je maîtrise l’ensemble de la chaîne de production data, de la collecte et la préparation des données à l’analyse, la modélisation et la valorisation des insights.",
             "Au cours de mes expériences, j’ai travaillé sur des problématiques concrètes mêlant web scraping, bases de données, analyse exploratoire, visualisation et prise de décision produit.",
@@ -602,9 +671,26 @@
         "pOne": "Cliquez sur code source pour voir les fichiers reliés au projet.",
         "pTwo": "Une fois sur github, consultez le fichier Readme.md pour davantages d'informations.",
         "seeMore" : "Voir Plus",
+        "caseStudy": "Étude de cas",
+        "caseStudyBtn": "Voir l'étude de cas",
+        "context": "Contexte",
+        "problem": "Problème",
+        "solution": "Solution",
+        "results": "Résultats",
+        "demo": "Voir la démo",
+        "sourceCode": "Code source",
+        "filterAll": "Tous",
+        "filterDataEngineering": "Data Engineering",
+        "filterMachineLearning": "Machine Learning",
+        "filterAiFullStack": "IA & Full Stack",
+        "filterBusinessIntelligence": "Business Intelligence",
+        "filterFullStack": "Full Stack",
+        "filterDataAnalysis": "Data Analysis",
+        "noResults": "Aucun projet dans cette catégorie.",
         "projectsData": [
             {
                 "id": "ecommerce_pipeline",
+                "category": "dataEngineering",
                 "title": "Pipeline Data E-Commerce End-to-End",
                 "shortDescription": "Conception d'une plateforme data complète pour centraliser, transformer et analyser des données e-commerce à partir de multiples sources.",
                 "longDescription": [
@@ -628,11 +714,23 @@
                     "Tableaux de bord interactifs développés avec Streamlit.",
                     "Déploiement local conteneurisé avec Docker Compose."
                 ],
-                "demoUrl": "https://youtu.be/c5ZMGYVpDBI",
-                "sourceUrl": "https://github.com/Abelkouadio95/e_com_pipeline"
+                "demoUrl": "https://youtu.be/UTr3cju32es?si=hVGUT5Hhr00udXnb",
+                "sourceUrl": "https://github.com/Abelkouadio95/e_com_pipeline",
+                "caseStudy": {
+                    "context": "Données e-commerce dispersées entre APIs REST, bases SQLite et fichiers métiers, sans vue unifiée pour l'analyse et la prise de décision.",
+                    "problem": "Absence de pipeline fiable et automatisé : reporting manuel, données non centralisées, architecture incapable de scaler avec le volume.",
+                    "solution": "Mise en place d'une architecture Bronze / Silver / Gold orchestrée par Airflow, avec Data Lake MinIO, transformations Python/SQL et exposition analytique via DuckDB et Streamlit.",
+                    "results": [
+                        "Pipeline end-to-end orchestré et conteneurisé avec Docker Compose",
+                        "Données produits, commandes et taux de change enrichies automatiquement",
+                        "Dashboard Streamlit interactif pour les KPIs métiers",
+                        "Stockage Parquet optimisé pour des requêtes analytiques rapides"
+                    ]
+                }
             },
             {
                 "id": "fraud_detection",
+                "category": "machineLearning",
                 "title": "Détection intelligente de fraude bancaire",
                 "shortDescription": "Anticiper et prévenir les transactions frauduleuses grâce au machine learning.",
                 "longDescription": [
@@ -655,6 +753,7 @@
 
             {
                 "id": "pfe",
+                "category": "aiFullStack",
                 "title": "Système intelligent de traitement et d’analyse de CV",
                 "shortDescription": "Matching profil/mission avec NLP et extraction d'informations.",
                 "longDescription":[
@@ -672,11 +771,23 @@
                 "Moteur de recherche et de filtrage des CVs et candidats.",
                 "Tableau de bord interactif affichant des KPIs clés"
                 ],
-                "sourceUrl": "https://github.com/Abelkouadio95/Cv_analyzer_pfe_project"
+                "sourceUrl": "https://github.com/Abelkouadio95/Cv_analyzer_pfe_project",
+                "caseStudy": {
+                    "context": "Stage ATLECS — les équipes RH géraient des volumes de CVs hétérogènes (PDF, scans) avec une saisie manuelle chronophage et peu fiable.",
+                    "problem": "Extraction manuelle des informations, erreurs de saisie fréquentes, matching profil/mission lent et difficile à scaler.",
+                    "solution": "Système combinant OCR pour numériser les CVs, NLP (SpaCy) pour structurer les données, matching multi-critères et dashboard RH temps réel avec Spring Boot.",
+                    "results": [
+                        "Réduction significative de la saisie manuelle grâce à l'OCR automatisé",
+                        "Extraction intelligente des compétences, expériences et formations via NLP",
+                        "Dashboard KPIs RH en temps réel pour le suivi des candidats",
+                        "Matching pondéré profil / mission pour accélérer la présélection"
+                    ]
+                }
             },
 
             {
                 "id": "ml-credit-scoring",
+                "category": "machineLearning",
                 "title": "Credit Scoring ML",
                 "shortDescription": "Modèle de scoring crédit avec pipeline ML complet et déploiement FastAPI.",
                 "longDescription":[
@@ -698,6 +809,7 @@
 
             {
                 "id": "portfolio-next",
+                "category": "fullStack",
                 "title": "Ce Portfolio !",
                 "shortDescription": "Portfolio moderne avec animations Framer Motion et Tailwind CSS.",
                 "longDescription": [
@@ -719,6 +831,7 @@
 
             {
                 "id": "immobilier",
+                "category": "machineLearning",
                 "title": "Data Science appliquée à l’immobilier",
                 "shortDescription": "Développement d’un modèle de Machine Learning capable de prédire le prix de maisons à partir de leurs caractéristiques (surface, localisation, nombre de pièces, etc.)",
                 "longDescription": [
@@ -733,6 +846,7 @@
             },
             {
                 "id": "AnalysisPython",
+                "category": "dataAnalysis",
                 "title": "Projets d’analyse de données en Python",
                 "shortDescription": "Recueil de projets d’analyse de données réalisés avec Python et Pandas",
                 "longDescription": [
@@ -746,6 +860,7 @@
             },
             {
                 "id": "AnalysisPowerBi",
+                "category": "businessIntelligence",
                 "title": "Dashboard Power Bi",
                 "shortDescription": "Recueil de dashboards interactifs réalisés avec Power BI",
                 "longDescription": [
@@ -762,6 +877,33 @@
     },
     
     "footer":{
-        "quickLinks": "Liens rapides"
+        "quickLinks": "Liens rapides",
+        "contacts": "Contacts"
+    },
+
+    "contact": {
+        "label": "CONTACT",
+        "title": "Discutons de votre projet data",
+        "subtitle": "Vous recrutez un Data Engineer / Analyst ou vous avez un besoin data concret ? Écrivez-moi.",
+        "directContact": "Ou contactez-moi directement",
+        "emailLabel": "Email",
+        "whatsappLabel": "WhatsApp",
+        "linkedinLabel": "LinkedIn",
+        "responseTime": "Je réponds généralement sous 48h.",
+        "form": {
+            "title": "Envoyez-moi un message",
+            "name": "Nom complet",
+            "email": "Adresse email",
+            "type": "Type de demande",
+            "subject": "Sujet",
+            "message": "Votre message",
+            "send": "Envoyer le message",
+            "success": "Votre client mail s'ouvre — il ne reste qu'à envoyer.",
+            "types": {
+                "job": "Opportunité CDI",
+                "mission": "Mission / Freelance",
+                "other": "Autre"
+            }
+        }
     }
 }

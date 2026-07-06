@@ -2,29 +2,18 @@ import Layout from "@/components/layout/layout";
 import ProjectsClient from "@/components/projects/ProjectsClient";
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { buildMetadata } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'projects' });
   
-  return {
+  return buildMetadata({
     title: `${t('projectsTitle')} - Abel Kouadio`,
     description: t('projectsContent'),
-    keywords: ['Projets', 'Data Science', 'Machine Learning', 'Développement Web', 'Full Stack', 'IA', 'Abel Kouadio'],
-    authors: [{ name: 'Abel Kouadio' }],
-    openGraph: {
-      title: `${t('projectsTitle')} - Abel Kouadio`,
-      description: t('projectsContent'),
-      type: 'website',
-      locale: locale,
-      siteName: 'Abel Kouadio Portfolio',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${t('projectsTitle')} - Abel Kouadio`,
-      description: t('projectsContent'),
-    },
-  };
+    locale,
+    keywords: ['Projects', 'Data Science', 'Machine Learning', 'Data Engineering', 'Power BI', 'Abel Kouadio'],
+  });
 }
 
 export async function generateStaticParams(): Promise<{ locale: string }[]> {
