@@ -130,7 +130,6 @@ export default function HomePageClient() {
               className="flex items-center justify-center gap-2 bg-[#0A66C2] text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-[#004182] transition-all duration-200 w-full sm:w-auto"
             >
               {t('linkedin')}
-              <LinkArrow className="w-10 h-10" />
             </a>
           </div>
         </div>
