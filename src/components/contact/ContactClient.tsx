@@ -219,7 +219,7 @@ export default function ContactClient() {
 
             {/* Info card */}
             <div className="mt-6 p-5 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-900 border border-slate-700/50 shadow-lg shadow-slate-900/10">
-              <p className="text-sm font-semibold text-white mb-1">Data Engineer & Data Analyst</p>
+              <p className="text-sm font-semibold text-white mb-1">Data Engineer & Analyst</p>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {t('subtitle')}
               </p>

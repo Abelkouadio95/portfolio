@@ -1,7 +1,7 @@
 {
     "home":{
-        "title": "Abel Bekantié Kouadio — Data Engineer & Data Analyst",
-        "subtitle": "Hello, je suis Abel Bekantié Kouadio, Data Engineer & Data Analyst",
+        "title": "Abel Bekantié Kouadio — Data Engineer & Analyst",
+        "subtitle": "Hello, je suis Abel Bekantié Kouadio, Data Engineer & Analyst",
         "description": "Je conçois des pipelines data et des dashboards qui transforment des données brutes en indicateurs fiables — de la collecte jusqu'à la décision.",
         "greeting": "Hello, je suis",
         "name": "Abel Bekantié Kouadio",
@@ -889,7 +889,7 @@
         "emailLabel": "Email",
         "whatsappLabel": "WhatsApp",
         "linkedinLabel": "LinkedIn",
-        "responseTime": "Je réponds généralement sous 48h.",
+        "responseTime": "Je réponds sous 24h.",
         "form": {
             "title": "Envoyez-moi un message",
             "name": "Nom complet",
