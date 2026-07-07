@@ -67,11 +67,11 @@
             "title": "Ils m'ont fait confiance",
             "subtitle": "Entreprises et organisations où j'ai contribué concrètement.",
             "items": [
-                { "name": "AGH Data Agency" },
-                { "name": "ATLECS" },
-                { "name": "Quanta EDGE" },
-                { "name": "SMSD" },
-                { "name": "ENSAM" }
+                { "name": "AGH Data Agency", "imageUrl": "/images/logos/agh.png"},
+                { "name": "ATLECS","imageUrl": "/images/logos/atlecs.webp"},
+                { "name": "Quanta EDGE", "imageUrl": "/images/logos/quanta.png"},
+                { "name": "SMSD", "imageUrl": "/images/logos/smsd.jpg" },
+                { "name": "ENSAM", "imageUrl": "/images/logos/ensam.jpg" }
             ]
         },
         "finalCta": {
