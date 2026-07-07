@@ -22,7 +22,7 @@ export async function generateStaticParams(): Promise<{ locale: string }[]> {
 export default function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const _ = params;
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
       <ContactClient />
     </main>
   );
