@@ -18,12 +18,13 @@ function TrustLogo({ item }: { item: TrustItem }) {
   return (
     <div className="group flex-shrink-0 flex items-center justify-center min-w-[200px] md:min-w-[240px] h-20 md:h-24 px-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300">
       {item.imageUrl ? (
-        <div className="relative h-10 md:h-12 w-36 md:w-44">
+        <div className="relative w-full h-16 md:h-20">
           <Image
             src={item.imageUrl}
             alt={item.name}
             fill
-            className="object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+            
+            className="object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       ) : (
