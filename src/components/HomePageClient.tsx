@@ -275,7 +275,6 @@ export default function HomePageClient() {
         aboutUrl={aboutUrl}
         experiences={experiences}
       />
-
       <TrustBanner
         label={t('trust.label')}
         title={t('trust.title')}
