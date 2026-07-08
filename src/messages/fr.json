@@ -14,7 +14,7 @@
             { "value": "3", "label": "Secteurs couverts" },
             { "value": "ENSAM Rabat", "label": "Ingénieur d'État" }
         ],
-        "technologies": ["Python", "SQL", "Power BI", "FastAPI", "Docker", "Pandas", "NLP"],
+        "technologies": ["Python", "SQL", "GCP", "Snowflake", "dbt", "Pandas", "PySpark"],
         "badge": {
             "title": "Certifications",
             "certifications": ["Google Data Analytics", "IBM Python"]
@@ -36,7 +36,7 @@
                 "Équipes métier sans accès rapide aux insights pour décider."
             ],
             "punchline": "Si vous cochez 2–3 cases, explorons ce que je peux apporter.",
-            "cta": "Découvrir mes projets"
+            "contact": "Contactez moi"
         },
         "featuredProjects": {
             "label": "PORTFOLIO",
@@ -154,8 +154,8 @@
             {
                 "title": "Stage Data Analyst / Business Analyst",
                 "company": "AGH Data Agency Holding SA",
-                "location": "Kenitra MAROC",
-                "period": "Décembre 2025 - à ce jour",
+                "location": "Meknès MAROC",
+                "period": "Décembre 2025 - Avril 2026",
                 "description": "Stage axé sur l’analyse de données métier visant à accompagner la conception d’applications et l’optimisation des décisions produit.",
                 "details" : [
                     "Participation à l’analyse stratégique et fonctionnelle de plusieurs projets (4 +) d’applications mobiles (bien-être, IA santé mentale, natural beauty etc, ).",
@@ -169,7 +169,7 @@
                     "Réalisation d’analyses exploratoires (EDA) pour identifier des patterns et indicateurs clés utiles à l’amélioration du produit."
                     
                 ],
-                "technologies": ["Excel", "SQL", "Power BI", "Java", "Python", "Mysql", "UML", "Web Scraping"]
+                "technologies": ["Excel", "SQL", "Power BI", "Python", "Mysql", "UML", "Web Scraping"]
             },
             {
                 "title": "Stage Data Science/IA & Développement Fullstack",
@@ -184,7 +184,7 @@
                     "Développement d'une interface de mise en correspondance entre les profils et les missions ( matching profil/mission ).",
                     "Contribution à l'architecture Full Stack (Spring Boot, MySQL), garantissant la scalabilité et l'intégration fluide avec les outils internes."
                 ],
-                "technologies": ["Vision par ordinateur", "NLP", "Spring-boot", "Java", "Python", "Mysql"]
+                "technologies": ["Python", "Vision par ordinateur", "NLP", "Spring-boot", "Java",  "Mysql"]
             },
             {
                 "title": "Stage Data science IA",
