@@ -87,7 +87,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="fixed top-16 left-0 right-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t border-gray-200 dark:border-gray-700 md:hidden"
+          className="fixed top-16 left-0 right-0 bg-white border-t border-gray-200 dark:border-gray-700 md:hidden"
         >
           <nav className="flex flex-col p-4 space-y-4">
             <CustomLink href="/" title={t('home')} className="text-lg" onClick={() => setIsMenuOpen(false)} />
