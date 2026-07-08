@@ -50,20 +50,20 @@ export default function HomePageClient() {
       {/* Hero */}
       <section className="relative overflow-hidden flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-16 pt-8 md:pt-12 pb-16 md:pb-24 bg-stone-50 bg-[radial-gradient(circle_at_18%_35%,rgba(251,191,36,.12),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.08),transparent_35%)] dark:bg-slate-950 dark:bg-[radial-gradient(circle_at_18%_35%,rgba(251,191,36,.15),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.12),transparent_35%)] ">
         {/* Text */}
-        <div className="w-full lg:w-[55%] flex flex-col items-center text-center order-2 lg:order-1">
+        <div className="w-full pt-20 lg:w-[55%] flex flex-col items-center text-center order-2 lg:order-1">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="w-full"
           >
-            <p className="text-sm md:text-base text-slate-500 dark:text-slate-400 font-medium mb-2">
+            <p className="text-xl md:text-xl text-slate-500 dark:text-slate-400 font-medium mb-2">
               {t('greeting')}
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight mb-2">
-              <span className="relative inline-block">
+              <span className="relative pb-2 inline-block">
                 {t('name')}
-                <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-100 dark:bg-blue-900/40 -z-10 rounded-sm" />
+                <span className="absolute left-0 bottom-0 w-full h-3 bg-blue-100 dark:bg-blue-900/40 rounded-sm z-0" />
               </span>
             </h1>
             <p className="text-base md:text-lg font-semibold text-blue-700 dark:text-blue-400 mb-5">
