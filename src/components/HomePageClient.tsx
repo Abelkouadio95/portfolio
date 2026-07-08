@@ -48,9 +48,9 @@ export default function HomePageClient() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-16 pt-8 md:pt-12 pb-16 md:pb-24">
+      <section className="relative overflow-hidden flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-16 pt-8 md:pt-12 pb-16 md:pb-24 bg-stone-50 bg-[radial-gradient(circle_at_18%_35%,rgba(251,191,36,.12),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.08),transparent_35%)] dark:bg-slate-950 dark:bg-[radial-gradient(circle_at_18%_35%,rgba(251,191,36,.15),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.12),transparent_35%)] ">
         {/* Text */}
-        <div className="w-full lg:w-[55%] flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
+        <div className="w-full lg:w-[55%] flex flex-col items-center text-center order-2 lg:order-1">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -93,9 +93,7 @@ export default function HomePageClient() {
               {technologies.map((tech, index) => (
                 <motion.span
                   key={tech}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.05 * index, duration: 0.3 }}
+                  whileHover={{scale: 1.3, y:-3}}
                   className="px-3 py-1 text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
                 >
                   {tech}
@@ -142,7 +140,7 @@ export default function HomePageClient() {
           className="w-full lg:w-[45%] relative order-1 lg:order-2"
         >
           <div className="relative group mx-auto max-w-md lg:max-w-none">
-            <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-blue-100/50 via-slate-100/30 to-slate-200/50 dark:from-blue-900/15 dark:via-slate-800/15 dark:to-slate-700/15 opacity-80 group-hover:opacity-100 transition-opacity -z-10" />
+            <div className="absolute -inset-2 rounded-2xl  opacity-80 group-hover:opacity-100 transition-opacity -z-10" />
             <div className="relative rounded-2xl overflow-hidden shadow-xl shadow-slate-300/40 dark:shadow-slate-900/60 ring-1 ring-slate-200 dark:ring-slate-700 aspect-[4/5] max-h-[480px] lg:max-h-[520px]">
               <Image
                 src={me}
@@ -172,8 +170,15 @@ export default function HomePageClient() {
         </motion.div>
       </section>
 
+      <TrustBanner
+        label={t('trust.label')}
+        title={t('trust.title')}
+        subtitle={t('trust.subtitle')}
+        items={trustItems}
+      />
+
       {/* Challenges section */}
-      <section className="w-full py-16 md:py-20 -mx-4 md:-mx-8 lg:-mx-30 px-4 md:px-8 lg:px-30 bg-slate-50 dark:bg-slate-900/50 rounded-none">
+      <section className="w-full px-4 relative overflow-hidden items-center w-full pt-8 md:pt-12 pb-16 md:pb-24 bg-slate-50 dark:bg-slate-900/50 rounded-none">
         <AnimatedSection>
           <div className="text-center max-w-2xl mx-auto mb-10">
             <p className="text-xs md:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3">
@@ -196,9 +201,9 @@ export default function HomePageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.4, delay: index * 0.08 }}
-              className="flex items-start gap-3 bg-white dark:bg-slate-800 rounded-xl p-4 md:p-5 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-blue-200 dark:hover:border-blue-800 transition-all duration-300 group"
+              className="flex items-start gap-3 bg-white dark:bg-slate-800 rounded-xl p-4 md:p-5 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-green-200 dark:hover:border-green-800 transition-all duration-300 group"
             >
-              <span className="mt-1 flex-shrink-0 w-2.5 h-2.5 rounded-full bg-blue-600 group-hover:scale-125 transition-transform duration-300" />
+              <span className="mt-1 flex-shrink-0 w-2.5 h-2.5 rounded-full bg-blue-600 group-hover:scale-135 group-hover:bg-green-700 transition-transform duration-300" />
               <p className="text-sm md:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
                 {item}
               </p>
@@ -212,10 +217,10 @@ export default function HomePageClient() {
               {t('challenges.punchline')}
             </p>
             <Link
-              href={`/${locale}/projects`}
+              href={`/${locale}/contact`}
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-semibold text-sm shadow-sm hover:shadow-md transition-all duration-200"
             >
-              {t('challenges.cta')}
+              {t('challenges.contact')}
               <FaArrowRight className="text-xs" />
             </Link>
           </div>
@@ -223,7 +228,7 @@ export default function HomePageClient() {
       </section>
 
       {/* Featured projects */}
-      <section className="w-full py-16 md:py-20">
+      <section className="w-full px-4 relative overflow-hidden items-center w-full pt-8 md:pt-12 pb-16 md:pb-24">
         <AnimatedSection>
           <div className="text-center max-w-2xl mx-auto mb-10">
             <p className="text-xs md:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3">
@@ -275,12 +280,7 @@ export default function HomePageClient() {
         aboutUrl={aboutUrl}
         experiences={experiences}
       />
-      <TrustBanner
-        label={t('trust.label')}
-        title={t('trust.title')}
-        subtitle={t('trust.subtitle')}
-        items={trustItems}
-      />
+      
 
       <CertificationsBanner
         label={t('certificationsHighlight.label')}

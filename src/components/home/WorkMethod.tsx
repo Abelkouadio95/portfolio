@@ -20,7 +20,7 @@ const stepIcons = [FaSearch, FaDatabase, FaCogs, FaChartLine];
 
 export default function WorkMethod({ label, title, subtitle, steps }: WorkMethodProps) {
   return (
-    <section className="w-full py-16 md:py-20 -mx-4 md:-mx-8 lg:-mx-30 px-4 md:px-8 lg:px-30 bg-slate-50 dark:bg-slate-900/50">
+    <section className="w-full px-4 relative overflow-hidden items-center w-full pt-8 md:pt-12 pb-16 md:pb-24 bg-slate-50 dark:bg-slate-900/50">
       <AnimatedSection>
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
           <p className="text-xs md:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3">

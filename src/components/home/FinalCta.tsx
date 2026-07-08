@@ -27,7 +27,7 @@ export default function FinalCta({
   projectsUrl,
 }: FinalCtaProps) {
   return (
-    <section className="w-full py-16 md:py-20 -mx-4 md:-mx-8 lg:-mx-30 px-4 md:px-8 lg:px-30">
+    <section className="w-full px-4 relative overflow-hidden items-center w-full pt-8 md:pt-12 pb-16 md:pb-24">
       <AnimatedSection>
         <div className="max-w-3xl mx-auto text-center bg-slate-900 dark:bg-slate-800 rounded-2xl px-6 py-12 md:px-12 md:py-16 shadow-xl">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3 leading-snug">

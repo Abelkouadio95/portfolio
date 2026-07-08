@@ -40,7 +40,7 @@ export default function TrustBanner({ label, title, subtitle, items }: TrustBann
   const duplicated = [...items, ...items];
 
   return (
-    <section className="w-full py-16 md:py-20 -mx-4 md:-mx-8 lg:-mx-30 px-4 md:px-8 lg:px-30 bg-gradient-to-b from-slate-50 via-blue-50/40 to-slate-50 dark:from-slate-900/60 dark:via-blue-950/20 dark:to-slate-900/60 border-y border-slate-200/80 dark:border-slate-800">
+    <section className="w-full px-4 relative overflow-hidden items-center w-full pt-8 md:pt-12 pb-16 md:pb-24">
       <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
         <p className="text-xs md:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3">
           {label}

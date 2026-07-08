@@ -71,7 +71,7 @@ export default function CertificationsBanner({
   certifications,
 }: CertificationsBannerProps) {
   return (
-    <section className="w-full py-16 md:py-20">
+    <section className="w-full px-4 relative overflow-hidden items-center w-full pt-8 md:pt-12 pb-16 md:pb-24">
       <AnimatedSection>
         <div className="text-center max-w-2xl mx-auto mb-10">
           <p className="text-xs md:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3">
