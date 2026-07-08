@@ -59,13 +59,13 @@ export function Navbar() {
         target={"_blank"}
         rel="noopener noreferrer"
         className="w-5 mr-3"
-        whileHover={{y:-2}}
+        whileHover={{scale: 1.1, y:-2}}
         whileTap={{scale:0.9}}> <LinkedInIcon/></motion.a>
         <motion.a href="https://github.com/Abelkouadio95"
         target="_blank"
         rel="noopener noreferrer"
         className="w-6 ml-3"
-        whileHover={{y:-2}}
+        whileHover={{scale: 1.1, y:-2}}
         whileTap={{scale:0.9}}><GithubIcon/></motion.a>
         <div className="ml-3">
           <LanguageSwitcher />
