@@ -48,7 +48,8 @@ export default function HomePageClient() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative overflow-hidden flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-16 pt-8 md:pt-12 pb-16 md:pb-24 bg-stone-50 bg-[radial-gradient(circle_at_18%_35%,rgba(251,191,36,.12),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.08),transparent_35%)] dark:bg-slate-950 dark:bg-[radial-gradient(circle_at_18%_35%,rgba(251,191,36,.15),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.12),transparent_35%)] ">
+      <section className="relative overflow-hidden flex flex-col lg:flex-row items-center justify-between w-full gap-10 lg:gap-16 pt-8 md:pt-12 pb-16 md:pb-24 
+        bg-stone-100 bg-[radial-gradient(circle_at_18%_35%,rgba(36, 172, 251, 0.12),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.08),transparent_35%)] dark:bg-slate-950 dark:bg-[radial-gradient(circle_at_18%_35%,rgba(251,191,36,.15),transparent_45%),radial-gradient(circle_at_75%_10%,rgba(249,115,22,.12),transparent_35%)] ">
         {/* Text */}
         <div className="w-full pt-20 lg:w-[55%] flex flex-col items-center text-center order-2 lg:order-1">
           <motion.div
@@ -94,7 +95,7 @@ export default function HomePageClient() {
                 <motion.span
                   key={tech}
                   whileHover={{scale: 1.3, y:-3}}
-                  className="px-3 py-1 text-xs md:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
+                  className="px-3 py-1 text-xs md:text-sm font-medium bg-blue-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
                 >
                   {tech}
                 </motion.span>

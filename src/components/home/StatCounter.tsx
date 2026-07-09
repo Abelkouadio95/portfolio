@@ -37,18 +37,20 @@ export default function StatCounter({ value, label }: StatCounterProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
-      className="text-center lg:text-left"
+      className="text-center"
     >
       {numericMatch ? (
-        <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
+        <p className="text-2xl md:text-3xl font-bold dark:text-white tracking-tight 
+          bg-blue-500 hover:bg-blue-600 text-white px-4 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
           <span ref={displayRef}>0{numericMatch[2]}</span>
         </p>
       ) : (
-        <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
+        <p className="text-lg md:text-xl font-bold dark:text-white tracking-tight 
+          bg-blue-500 hover:bg-blue-600 text-white px-4 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
           {value}
         </p>
       )}
-      <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wide font-medium">
+      <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 mt-2 uppercase tracking-wide font-medium">
         {label}
       </p>
     </motion.div>

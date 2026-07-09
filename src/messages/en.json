@@ -12,16 +12,16 @@
             { "value": "4+", "label": "Internships & experiences" },
             { "value": "6+", "label": "Projects delivered" },
             { "value": "3", "label": "Industries covered" },
-            { "value": "ENSAM", "label": "Engineering degree" }
+            { "value": "ENSAM Rabat", "label": "Engineering degree" }
         ],
-        "technologies": ["Python", "SQL", "Power BI", "FastAPI", "Docker", "Pandas", "NLP"],
+        "technologies": ["Python", "SQL", "GCP", "Snowflake", "dbt", "Pandas", "PySpark"],
         "badge": {
             "title": "Certifications",
-            "certifications": ["Google Data Analytics", "IBM Python", "ENSAM"]
+            "certifications": ["Google Data Analytics", "IBM Python"]
         },
         "projectsCta": "View my projects",
         "cv": "Download my CV",
-        "cvLink": "/Cv/Resume_AbelBékantieKouadio.pdf",
+        "cvLink": "/Cv/Resume_Abel_Kouadio.pdf",
         "linkedin": "LinkedIn",
         "linkedinUrl": "https://www.linkedin.com/in/abel-bekanti%C3%A9-kouadio-50333527b/",
         "challenges": {
