@@ -16,7 +16,7 @@ interface TrustBannerProps {
 
 function TrustLogo({ item }: { item: TrustItem }) {
   return (
-    <div className="group flex-shrink-0 flex items-center justify-center min-w-[200px] md:min-w-[240px] h-20 md:h-24 px-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300">
+    <div className="group flex-shrink-0 flex items-center justify-center min-w-[200px] md:min-w-[240px] h-20 md:h-24 px-6 bg-white rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300">
       {item.imageUrl ? (
         <div className="relative w-full h-16 md:h-20">
           <Image
@@ -54,8 +54,8 @@ export default function TrustBanner({ label, title, subtitle, items }: TrustBann
       </div>
 
       <div className="relative w-full overflow-hidden">
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-r from-slate-50 via-slate-50/90 to-transparent dark:from-slate-900 dark:via-slate-900/90" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-l from-slate-50 via-slate-50/90 to-transparent dark:from-slate-900 dark:via-slate-900/90" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-r from-slate-50 via-slate-50/90 to-transparent dark:from-slate-900 " />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-l from-slate-50 via-slate-50/90 to-transparent dark:from-slate-900 " />
 
         <div className="trust-marquee-scroll gap-6 md:gap-8">
           {duplicated.map((item, index) => (
