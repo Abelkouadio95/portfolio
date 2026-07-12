@@ -27,7 +27,7 @@
         "challenges": {
             "label": "WHAT I SOLVE",
             "title": "Data challenges I know how to tackle",
-            "subtitle": "Do 2 or 3 of these sound familiar? We probably have something to discuss.",
+            "subtitle": "Do 2 or 3 of these sound familiar ? We probably have something to discuss.",
             "items": [
                 "Scattered data that's hard to centralize and trust.",
                 "Manual, fragile pipelines with slow or unstable refreshes.",
